@@ -1,0 +1,74 @@
+// Media queries desktop
+
+@mixin media-xxl()
+  @media screen and (max-width: 1400px)
+    @content
+
+@mixin media-xl()
+  @media screen and (max-width: 1200px)
+    @content
+
+// iPad Pro 11 pulgadas 834px
+@mixin media-lg()
+  @media screen and (max-width: 992px)
+    @content
+
+@mixin media-md()
+  @media screen and (max-width: 768px)
+    @content
+
+@mixin media-sm()
+  @media screen and (max-width: 576px)
+    @content
+
+@mixin media-xs()
+  @media screen and (max-width: 480px)
+    @content
+
+@mixin media-xxs()
+  @media screen and (max-width: 340px)
+    @content
+
+// Media queries mobile first
+
+// iPhone SE          : 375px x 667px
+
+
+// iPhone 12 Pro      : 390px x 844px
+@mixin xxxs() // iPhone 12 Pro
+  @media screen and (min-width: 390px)
+    @content
+
+// iPhone XR          : 414px x 896px
+@mixin xxs() // iPhone XR
+  @media screen and (min-width: 414px)
+    @content
+
+// iPhone 14 Pro Max  : 430px x 932px
+@mixin xss() // iPhone 14 Pro Max
+  @media screen and (min-width: 430px)
+    @content
+
+
+// default Media Queries
+@mixin xs() // default
+  @media screen and (min-width: 480px)
+    @content
+// Small
+@mixin sm() // default
+  @media screen and (min-width: 640px)
+    @content
+
+// ;edium
+@mixin md() // default
+  @media screen and (min-width: 768px)
+    @content
+
+// Large
+@mixin lg() // default
+  @media screen and (min-width: 1024px)
+    @content
+// Extra Large
+@mixin xl() // default
+  @media screen and (min-width: 1280px)
+    @content

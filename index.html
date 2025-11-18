@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Holística - Salud mental y emocional</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS (puedes reemplazar por tu app.css compilado) -->
+
+  <!-- Tus estilos compilados -->
+  <link rel="stylesheet" href="public/css/main.css">
+</head>
+
+<body>
+
+  <!-- HEADER / HERO -->
+  <header class="hero position-relative text-white">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="public/img/holistica.png" alt="Holística Logo" class="me-2">
+          <!-- <span class="fw-light">hol</span>ística -->
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+          <ul class="navbar-nav align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Quiénes somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Psicoterapia</a>
+            </li>
+
+            <!-- Dropdown Desarrollo personal -->
+            <li class="nav-item dropdown-hover">
+              <a class="nav-link" href="#" id="desarrolloDropdown">
+                Desarrollo personal
+              </a>
+              <ul class="dropdown-submenu" aria-labelledby="desarrolloDropdown">
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="experiencias.html">Experiencias</a></li>
+                <li><a href="recursos-digitales.html">Recursos digitales</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Empresas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+
+            <li class="nav-item ms-lg-3">
+              <a class="btn btn-light btn-sm fw-semibold" href="#">Agenda una cita</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO CONTENT -->
+    <div class="container hero-content py-5">
+      <div class="row">
+        <div class="col-lg-6 col-md-8">
+          <p class="text-uppercase small mb-2">Conecta mente, cuerpo y alma</p>
+          <h1 class="display-5 mb-3">
+            Tu salud mental y <br> emocional empieza aquí
+          </h1>
+          <p class="lead mb-4">
+            Creamos espacios de autoconocimiento y transformación profunda, donde mente,
+            cuerpo y alma se encuentran para generar un cambio real y sostenible en el tiempo.
+          </p>
+          <!-- <a href="#" class="btn btn-light btn-lg">Agenda una cita</a> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- PANEL FLOTANTE CON PROFESIONALES -->
+  <div class="hero-panel container">
+    <div class="row align-items-center g-4">
+  
+      <!-- Profesional 1 -->
+      <div class="row col-md-6 text-center">
+        <div class="col-md-6 text-center">
+          <img src="public/img/joaquin.jpg" alt="Joaquín Barrios" class="rounded-circle img-fluid hero-avatar mb-3">
+          <h6 class="mb-1">Joaquín Barrios</h6>
+          <small class="text-muted">Psicólogo Clínico</small>
+        </div>
+        
+        <!-- Profesional 2 -->
+        <div class="col-md-6 text-center">
+          <img src="public/img/viera.jpg" alt="Viera Stenning" class="rounded-circle img-fluid hero-avatar mb-3">
+          <h6 class="mb-1">Viera Stenning</h6>
+          <small class="text-muted">Psicoterapeuta</small>
+        </div>
+      </div>
+
+      <div class="col-md-1 text-center">
+        <div class="divider-vertical"></div>
+      </div>
+  
+      <!-- Texto derecha con línea -->
+      <div class="col-md-5 hero-text">
+        
+        <h5 class="mb-2">¡Hola!<br>Somos Joaquín y Viera</h5>
+        <p class="mb-0 small">
+          Holística nació con una convicción: el bienestar no puede quedarse solo en la mente.
+          Somos psicólogos que unimos lo emocional, corporal y espiritual para acompañar procesos
+          auténticos de transformación.
+        </p>
+      </div>
+
+
+      
+
+  
+    </div>
+  </div>
+  </header>
+
+  <main>
+    <!-- SERVICIOS -->
+    <section class="services-section py-5">
+      <div class="container">
+        <div class="row align-items-start g-5">
+          <!-- Texto de introducción -->
+          <div class="col-lg-6">
+            <h2 class="mb-3">Servicios</h2>
+            <p class="mb-4">
+              Un espacio para sanar, crecer y reconectar. En Holística te ofrecemos diferentes formas de
+              acompañamiento para tu bienestar integral.
+            </p>
+            <a href="#" class="text-decoration-none fw-semibold services-link">
+              Conoce nuestros servicios
+            </a>
+          </div>
+
+          <!-- Cards de servicios -->
+          <div class="service-cards col-lg-6">
+            <div class="service-card">
+              <div class="row align-items-center">
+                <div class="image col-sm-3 mb-3 mb-sm-0">
+                  <img src="public/img/icon-psicoterapia.png" alt="Icono Psicoterapia">
+                </div>
+                <div class="col-sm-9">
+                  <h5 class="mb-2">Psicoterapia</h5>
+                  <p class="small mb-3">
+                    Acompañamos procesos emocionales con terapias individuales, de pareja y grupos para ansiedad,
+                    estrés, crisis y duelos, según tus necesidades.
+                  </p>
+                  <a href="#" class="btn btn-sm btn-outline-light">Ver más</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-card">
+              <div class="row align-items-center">
+                <div class="image col-sm-3 mb-3 mb-sm-0">
+                  <img src="public/img/icon-experiencias.png" alt="Icono Experiencias">
+                </div>
+                <div class="col-sm-9">
+                  <h5 class="mb-2">Experiencias</h5>
+                  <p class="small mb-3">
+                    Vivencias transformadoras para reconectar contigo desde el cuerpo, el ritmo y la voz,
+                    acompañadas por especialistas en bienestar.
+                  </p>
+                  <a href="#" class="btn btn-sm btn-outline-light">Ver más</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-card">
+              <div class="row align-items-center">
+                <div class="image col-sm-3 mb-3 mb-sm-0">
+                  <img src="public/img/icon-empresas.png" alt="Icono Experiencias">
+                </div>
+                <div class="col-sm-9">
+                  <h5 class="mb-2">Empresas</h5>
+                  <p class="small mb-3">
+                    Programas de bienestar laboral con pausas activas, mindfulness, mapeo y acompañamiento emocional
+                    personalizados para equipos.
+                  </p>
+                  <a href="#" class="btn btn-sm btn-outline-light">Ver más</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NUESTRO BLOG -->
+    <section class="blog-section py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2>Nuestro Blog</h2>
+        </div>
+
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-md-4">
+            <article class="blog-card h-100 p-4 rounded-5 text-center">
+              <div class="blog-image-wrapper mb-3">
+                <img src="public/img/blog-1.jpg" alt="Transformación consciente" class="blog-image img-fluid rounded-5">
+              </div>
+              <h5 class="mb-3">
+                Transformación consciente: Cómo renunciar a la ilusión de soluciones mágicas y elegir un cambio real.
+              </h5>
+              <p class="small mb-3">
+                Vivimos en un entorno que busca soluciones rápidas. Descubre cómo construir procesos de cambio
+                profundos y sostenibles...
+              </p>
+              <a href="#" class="btn btn-sm btn-outline-dark">Ver más</a>
+            </article>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-4">
+            <article class="blog-card h-100 p-4 rounded-5 text-center">
+              <div class="blog-image-wrapper mb-3">
+                <img src="public/img/blog-2.jpg" alt="Reconectar con lo esencial" class="blog-image img-fluid rounded-5">
+              </div>
+              <h5 class="mb-3">
+                Reconectar con lo esencial: Habitar la identidad genuina.
+              </h5>
+              <p class="small mb-3">
+                En un mundo acelerado, reaprender a escucharnos requiere espacios y tiempos que honren nuestra
+                identidad profunda...
+              </p>
+              <a href="#" class="btn btn-sm btn-outline-dark">Ver más</a>
+            </article>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-4">
+            <article class="blog-card h-100 p-4 rounded-5 text-center">
+              <div class="blog-image-wrapper mb-3">
+                <img src="public/img/blog-3.jpg" alt="No hay magia, hay compromiso" class="blog-image img-fluid rounded-5">
+              </div>
+              <h5 class="mb-3">
+                No hay magia. Hay compromiso.
+              </h5>
+              <p class="small mb-3">
+                El bienestar emocional no llega de un día para otro, sino de decisiones pequeñas y constantes
+                que nos acompañan día a día...
+              </p>
+              <a href="#" class="btn btn-sm btn-outline-dark">Ver más</a>
+            </article>
+          </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <a href="#" class="btn btn-light blog-see-all">Ver todo</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer text-white py-5">
+    <div class="container">
+      <div class="row gy-4">
+        <!-- Columna 1 -->
+        <div class="col-md-4">
+          <h4 class="mb-3">
+            <span class="fw-light">hol</span>ística
+          </h4>
+          <p class="small mb-3">
+            La salud mental no es cosa solo de la mente. Nos encontramos donde mente, cuerpo y alma se cruzan.
+          </p>
+          <p class="small mb-1">La Aurora, Miraflores, Lima</p>
+          <p class="small mb-1">holistica@espaciosholisticos.com</p>
+          <p class="small mb-0">(+51) 924 186 120</p>
+        </div>
+
+        <!-- Columna 2 -->
+        <div class="col-md-3">
+          <h6 class="mb-3">Servicios</h6>
+          <ul class="list-unstyled small">
+            <li><a href="#" class="footer-link">Psicoterapia</a></li>
+            <li><a href="#" class="footer-link">Experiencias</a></li>
+            <li><a href="#" class="footer-link">Empresas</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 3 -->
+        <div class="col-md-3">
+          <h6 class="mb-3">Interés</h6>
+          <ul class="list-unstyled small">
+            <li><a href="#" class="footer-link">Nosotros</a></li>
+            <li><a href="#" class="footer-link">Términos y Condiciones</a></li>
+            <li><a href="#" class="footer-link">Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 4 -->
+        <div class="col-md-2">
+          <h6 class="mb-3">Síguenos</h6>
+          <ul class="list-unstyled small">
+            <li><a href="#" class="footer-link">Holística Centro</a></li>
+            <li><a href="#" class="footer-link">@holistica_peru</a></li>
+            <li><a href="#" class="footer-link">Holística Perú</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="text-center small mt-4">
+        © 2025 Holística. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+  <script src="public/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

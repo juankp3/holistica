@@ -1,0 +1,105 @@
+//
+// =============================================
+// FUENTES – HOLÍSTICA
+// =============================================
+//
+
+// ---------------------------------------------
+// AASmartSans (Light)
+// ---------------------------------------------
+@font-face {
+  font-family: 'AASmartSans';
+  src: url(../fonts/AASmartSans-Light.otf) format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+// ---------------------------------------------
+// Bilo Family
+// ---------------------------------------------
+
+// Regular
+@font-face {
+  font-family: 'Bilo';
+  src: url(../fonts/Bilo.otf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+// Light
+@font-face {
+  font-family: 'Bilo';
+  src: url(../fonts/Bilo_Light.otf);
+  font-weight: 300;
+  font-style: normal;
+}
+
+// Light Italic
+@font-face {
+  font-family: 'Bilo';
+  src: url(../fonts/Bilo_Light_Italic.otf);
+  font-weight: 300;
+  font-style: italic;
+}
+
+// Medium Italic
+@font-face {
+  font-family: 'Bilo';
+  src: url(../fonts/Bilo_Medium.otf);
+  font-weight: 500;
+  font-style: normal;
+}
+
+// Medium Italic
+@font-face {
+  font-family: 'Bilo';
+  src: url(../fonts/Bilo_Medium_Italic.otf);
+  font-weight: 500;
+  font-style: italic;
+}
+
+// Bold
+@font-face {
+  font-family: 'Bilo';
+  src: url(../fonts/Bilo_Bold.otf);
+  font-weight: 700;
+  font-style: normal;
+}
+
+// Bold Italic
+@font-face {
+  font-family: 'Bilo';
+  src: url(../fonts/Bilo_Bold_Italic.otf);
+  font-weight: 700;
+  font-style: italic;
+}
+
+// Italic (regular italic)
+@font-face {
+  font-family: 'Bilo';
+  src: url(../fonts/Bilo_Italic.otf.otf);
+  font-weight: 400;
+  font-style: italic;
+}
+
+// ---------------------------------------------
+// Playfair Display (Variable)
+// ---------------------------------------------
+
+@font-face {
+  font-family: 'PlayfairDisplay';
+  src: url('../fonts/PlayfairDisplay-VariableFont_wght.ttf');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PlayfairDisplay';
+  src: url('../fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+
+// $font-base: 'Bilo', sans-serif;
+// $font-headings: 'PlayfairDisplay', serif;
