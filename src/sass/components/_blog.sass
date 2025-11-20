@@ -1,0 +1,101 @@
+.blog-section
+  position: relative
+  padding-top: 6rem
+  padding-bottom: 6rem
+  background-color: #ded9cf
+  color: #444
+  overflow: hidden
+  background-image: url('../img/bg-blog.png')
+  background-repeat: no-repeat
+  background-size: cover
+
+  h2
+    font-size: 2.3rem
+    letter-spacing: .2em
+    margin-bottom: 0
+    color: white
+    font-weight: 400
+
+  p
+    font-size: .9rem
+    line-height: 1.6
+
+.blog-card
+  border-radius: 30rem !important
+  border: 1px solid rgba(255, 255, 255, 0.7)
+  padding: 2.5rem 2.25rem
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  transition: transform .25s ease, box-shadow .25s ease
+  margin: 12px
+  h5
+    font-size: 1.05rem
+    line-height: 1.5
+    color: white
+    font-weight: 500
+
+  p.small
+    color: white
+
+  &:hover
+    transform: translateY(-8px)
+    box-shadow: 0 24px 55px rgba(0, 0, 0, 0.12)
+
+// Contenedor de la imagen
+.blog-image-wrapper
+  width: 100%
+  border-radius: 2.25rem
+  display: flex
+  align-items: center
+  justify-content: center
+
+.blog-image
+  width: 100%
+  border-radius: 2rem
+  display: block
+  object-fit: cover
+
+.blog-card .btn-outline-dark
+  border-radius: 999px
+  padding: .35rem 1.4rem
+  font-size: .75rem
+  text-transform: uppercase
+  letter-spacing: .08em
+  border-color: white
+  color: white
+  background-color: transparent
+
+  &:hover
+    background-color: $primary
+    color: #f3eeed
+
+.blog-see-all
+  border-radius: 999px
+  padding: .6rem 2.6rem
+  font-size: .8rem
+  text-transform: uppercase
+  letter-spacing: .12em
+  border: none
+  background-color: white
+  color: $primary
+
+  &:hover
+    background-color: $primary 
+    color: #f3eeed
+    
+@media (max-width: 991.98px)
+  .blog-section
+    padding-top: 3.5rem
+    padding-bottom: 3.5rem
+
+  .blog-card
+    padding: 2rem 1.75rem
+
+@media (max-width: 575.98px)
+  .blog-card
+    border-radius: 2rem
+
+  .blog-image-wrapper
+    padding: .9rem

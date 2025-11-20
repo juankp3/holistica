@@ -12098,7 +12098,7 @@ textarea.form-control-lg {
   padding-top: 2rem;
   background-image: url("../img/cover.png");
   background-repeat: no-repeat;
-  background-size: inherit;
+  background-size: cover;
   background-position: top center;
 }
 
@@ -12179,13 +12179,43 @@ textarea.form-control-lg {
   padding-bottom: 6rem;
   position: relative;
   z-index: 2;
+  background-image: url("../img/bg-servicios.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.services-section .box-service-intro {
+  margin-top: 10rem;
+  padding-right: 6rem;
+  padding-left: 4rem;
+  font-weight: 100;
+}
+.services-section .box-service-intro .space {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.services-section .box-service-intro p {
+  color: #214a4c;
+}
+.services-section .box-service-intro span {
+  color: #214a4c;
+  font-weight: 500;
+  font-style: normal;
+  margin-bottom: 1rem;
+}
+.services-section .box-service-intro .divider-vertical {
+  width: 85%;
+  height: 0.8px;
+  background-color: #214a4c;
+  position: relative;
+  top: auto;
+  margin-bottom: 32px;
 }
 .services-section h2, .services-section .h2 {
-  font-family: "Bilo", serif;
   font-size: 2.5rem;
   font-weight: 400;
   color: #214a4c;
-  margin-bottom: 1.5rem;
+  letter-spacing: 0.2em;
+  margin-bottom: 2.5rem !important;
 }
 .services-section p {
   font-size: 1rem;
@@ -12197,13 +12227,12 @@ textarea.form-control-lg {
   letter-spacing: 0.15em;
   font-size: 0.85rem;
   color: #214a4c;
-  border-bottom: 1px solid #b7b7b7;
   padding-bottom: 0.25rem;
   transition: 0.25s ease;
+  text-decoration: none;
 }
 .services-section .services-link:hover {
   color: #000;
-  border-color: #000;
 }
 
 .service-cards {
@@ -12279,5 +12308,206 @@ textarea.form-control-lg {
   }
   .service-card .service-icon {
     margin-bottom: 1rem;
+  }
+}
+.blog-section {
+  position: relative;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #ded9cf;
+  color: #444;
+  overflow: hidden;
+  background-image: url("../img/bg-blog.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.blog-section h2, .blog-section .h2 {
+  font-size: 2.3rem;
+  letter-spacing: 0.2em;
+  margin-bottom: 0;
+  color: white;
+  font-weight: 400;
+}
+.blog-section p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.blog-card {
+  border-radius: 30rem !important;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  padding: 2.5rem 2.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  margin: 12px;
+}
+.blog-card h5, .blog-card .h5 {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: white;
+  font-weight: 500;
+}
+.blog-card p.small {
+  color: white;
+}
+.blog-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 55px rgba(0, 0, 0, 0.12);
+}
+
+.blog-image-wrapper {
+  width: 100%;
+  border-radius: 2.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blog-image {
+  width: 100%;
+  border-radius: 2rem;
+  display: block;
+  object-fit: cover;
+}
+
+.blog-card .btn-outline-dark {
+  border-radius: 999px;
+  padding: 0.35rem 1.4rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-color: white;
+  color: white;
+  background-color: transparent;
+}
+.blog-card .btn-outline-dark:hover {
+  background-color: #214a4c;
+  color: #f3eeed;
+}
+
+.blog-see-all {
+  border-radius: 999px;
+  padding: 0.6rem 2.6rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  border: none;
+  background-color: white;
+  color: #214a4c;
+}
+.blog-see-all:hover {
+  background-color: #214a4c;
+  color: #f3eeed;
+}
+
+@media (max-width: 991.98px) {
+  .blog-section {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+  .blog-card {
+    padding: 2rem 1.75rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .blog-card {
+    border-radius: 2rem;
+  }
+  .blog-image-wrapper {
+    padding: 0.9rem;
+  }
+}
+.footer {
+  background-color: #214a4c;
+  color: #f5f3ef;
+  font-family: "Bilo", sans-serif;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+.footer .logo {
+  height: 40px;
+  margin-bottom: 1rem;
+}
+.footer h4, .footer .h4, .footer h6, .footer .h6 {
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+.footer h4, .footer .h4 {
+  font-size: 1.6rem;
+  text-transform: none;
+  letter-spacing: 0.03em;
+}
+.footer span.fw-light {
+  font-weight: 300;
+}
+.footer p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: rgba(245, 243, 239, 0.8);
+}
+.footer .row {
+  align-items: flex-start;
+}
+.footer .footer-link {
+  display: inline-block;
+  color: rgba(245, 243, 239, 0.85);
+  font-size: 0.9rem;
+  margin-bottom: 0.35rem;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+.footer .footer-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+.footer .col-md-4 p.small {
+  margin-bottom: 0.45rem;
+}
+.footer ul {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+.footer ul li {
+  margin-bottom: 0.35rem;
+}
+.footer .col-md-2 ul li {
+  margin-bottom: 0.6rem;
+}
+.footer .text-center.small {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  color: rgba(245, 243, 239, 0.7);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 991.98px) {
+  .footer {
+    text-align: left;
+  }
+  .footer .col-md-4,
+  .footer .col-md-3,
+  .footer .col-md-2 {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .footer {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  .footer h4, .footer .h4 {
+    font-size: 1.4rem;
   }
 }

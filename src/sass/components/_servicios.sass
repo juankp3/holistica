@@ -4,12 +4,38 @@
   padding-bottom: 6rem
   position: relative
   z-index: 2
+  background-image: url('../img/bg-servicios.png')
+  background-repeat: no-repeat
+  background-size: cover
+  .box-service-intro
+    margin-top: 10rem
+    padding-right: 6rem
+    padding-left: 4rem
+    font-weight: 100
+    .space
+      padding-left: 32px
+      padding-right: 32px
+    p
+      color: $primary
+    span
+      color: $primary
+      font-weight: 500
+      font-style: normal
+      margin-bottom: 1rem
+    .divider-vertical
+      width: 85%
+      height: 0.8px
+      background-color: $primary
+      position: relative
+      top: auto
+      margin-bottom: 32px
   h2
-    font-family: 'Bilo', serif
+    // font-family: 'Bilo', serif
     font-size: 2.5rem
     font-weight: 400
     color: $primary
-    margin-bottom: 1.5rem
+    letter-spacing: .2em
+    margin-bottom: 2.5rem !important
   p
     font-size: 1rem
     line-height: 1.65
@@ -19,19 +45,17 @@
     letter-spacing: 0.15em
     font-size: .85rem
     color: $primary
-    border-bottom: 1px solid #b7b7b7
     padding-bottom: .25rem
     transition: .25s ease
+    text-decoration: none
+    // font-weight: 500
 
     &:hover
+      // text-decoration: underline
       color: #000
-      border-color: #000
+      // border-color: #000
 
 
-
-// ========================================
-// TARJETAS DE SERVICIO
-// ========================================
 .service-cards
   display: flex
   gap: 1.5rem 
@@ -57,22 +81,16 @@
       height: 100px
       border-radius: 1rem
       margin-bottom: 1.5rem
-
-  // Hover elegante
   &:hover
     transform: translateY(-4px)
     box-shadow: 0 18px 40px rgba(0,0,0,.18)
-
-  // Título dentro de la card
   h5
     font-size: 1.35rem
     margin-bottom: .75rem
-
   p
     font-size: .95rem
     opacity: .9
 
-  // Botón “Ver más”
   .btn
     border-radius: 50px
     padding-left: 1.2rem
@@ -85,29 +103,13 @@
       border-color: white
 
 
-
-
-// ========================================
-// COLORES PERSONALIZADOS PARA CADA CARD
-// ========================================
-
-// Psicoterapia
 .service-card:nth-child(1)
   background: $primary
-
-// Experiencias
 .service-card:nth-child(2)
   background: $secondary
-
-// Empresas
 .service-card:nth-child(3)
   background: $hol-purple-light
 
-
-
-// ========================================
-// RESPONSIVE
-// ========================================
 
 @media (max-width: 768px)
   .service-card
