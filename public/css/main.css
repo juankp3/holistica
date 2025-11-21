@@ -12136,6 +12136,11 @@ textarea.form-control-lg {
   padding-right: 0px;
   font-style: normal;
 }
+@media screen and (max-width: 992px) {
+  .hero-panel .hero-text {
+    padding-left: 0px;
+  }
+}
 .hero-panel .hero-text .mb-2 {
   font-family: "PlayfairDisplay";
   font-size: 2rem;
@@ -12176,6 +12181,11 @@ textarea.form-control-lg {
   font-style: normal;
   font-weight: 100;
 }
+@media screen and (max-width: 768px) {
+  .hero-content {
+    padding-top: 4rem !important;
+  }
+}
 .hero-content .small {
   font-family: "Bilo", sans-serif;
   font-style: normal;
@@ -12204,6 +12214,22 @@ textarea.form-control-lg {
   padding-left: 4rem;
   font-weight: 100;
 }
+@media screen and (max-width: 992px) {
+  .services-section .box-service-intro {
+    margin-top: 0rem;
+    padding-right: 0rem;
+    padding-left: 0rem;
+    padding-bottom: 4rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .services-section .box-service-intro {
+    margin-top: 0rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 4rem;
+  }
+}
 .services-section .box-service-intro .space {
   padding-left: 32px;
   padding-right: 32px;
@@ -12224,6 +12250,11 @@ textarea.form-control-lg {
   position: relative;
   top: auto;
   margin-bottom: 32px;
+}
+@media screen and (max-width: 768px) {
+  .services-section .box-service-intro .divider-vertical {
+    width: 100%;
+  }
 }
 .services-section h2, .services-section .h2 {
   font-size: 2.5rem;

@@ -12,6 +12,16 @@
     padding-right: 6rem
     padding-left: 4rem
     font-weight: 100
+    @include media-lg()
+      margin-top: 0rem
+      padding-right: 0rem
+      padding-left: 0rem
+      padding-bottom: 4rem
+    @include media-md()
+      margin-top: 0rem
+      padding-right: 2rem
+      padding-left: 2rem
+      padding-bottom: 4rem
     .space
       padding-left: 32px
       padding-right: 32px
@@ -29,6 +39,10 @@
       position: relative
       top: auto
       margin-bottom: 32px
+      @include media-md()
+        width: 100%
+        
+      
   h2
     // font-family: 'Bilo', serif
     font-size: 2.5rem

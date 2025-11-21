@@ -29,7 +29,8 @@
     padding-left: 32px 
     padding-right: 0px
     font-style: normal
-   
+    @include media-lg()
+      padding-left: 0px 
     .mb-2
       font-family: 'PlayfairDisplay'
       font-size: 2rem
@@ -64,6 +65,8 @@
   font-family: 'PlayfairDisplay'
   font-style: normal
   font-weight: 100
+  @include media-md()
+    padding-top: 4rem !important
   .small
     font-family: 'Bilo', sans-serif
     font-style: normal
