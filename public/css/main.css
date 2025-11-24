@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import '../../node_modules/swiper/swiper-bundle.min.css';
 @font-face {
   font-family: "AASmartSans";
   src: url(../fonts/AASmartSans-Light.otf) format("opentype");
