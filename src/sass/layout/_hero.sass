@@ -1,6 +1,8 @@
 .hero
   align-items: center
   padding-top: 2rem
+  background: $primary
+.hero--home
   background-image: url('../img/cover.png')
   background-repeat: no-repeat
   background-size: cover
@@ -35,7 +37,7 @@
       font-family: 'PlayfairDisplay'
       font-size: 2rem
       padding-bottom: 32px
-      letter-spacing: 1.5px
+      letter-spacing: $space-xxxs
       line-height: 1.2
       font-weight: 100
     .small
@@ -44,8 +46,19 @@
       line-height: 1.5
       font-weight: 100
       color: white
+      letter-spacing: $space-xxxs
+  h6
+    font-family: 'PlayfairDisplay'
+    font-style: normal
+    color: white !important
+    font-weight: 100
+    letter-spacing: $space-xxxs
   small
     color: white !important
+    font-family: 'Bilo', sans-serif
+    font-weight: 100
+    letter-spacing: $space-xxxs
+    font-size: 1.1rem
 
 .divider-vertical
   position: absolute
@@ -71,9 +84,11 @@
     font-family: 'Bilo', sans-serif
     font-style: normal
     font-weight: 300
-    letter-spacing: 2px
+    letter-spacing: $space-xxxs
   .lead
     font-family: 'Bilo', sans-serif
     font-style: normal
+    font-weight: 100
     font-size: 1.25rem
+    letter-spacing: $space-xxxs
 
