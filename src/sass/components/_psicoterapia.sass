@@ -61,24 +61,34 @@
 // ---------- BLOQUE 2 – TEXTO PRINCIPAL ----------
 .psico-block2
   background-color: $bg-base
-
+  background-image: url('../img/bg-salud.png')
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: top center
+  .text-body-lg 
+    color: $primary
   .rounded-4
     border-radius: 2rem
     box-shadow: $shadow-soft
-
+  p 
+    max-width: 900px
+    margin-right: auto
+    margin-left: auto
   .psico-block2-title
     font-family: 'PlayfairDisplay'
     font-size: 1.7rem
     font-weight: 300
     color: $primary
     margin-bottom: 1.5rem
+  .psico-block2-uppercase
+    text-transform: uppercase
 
-  .psico-block2-text
-    font-family: 'Bilo', sans-serif
-    font-size: $font-md
-    line-height: 1.8
-    color: $text-main
-    margin-bottom: .75rem
+  // .psico-block2-text
+  //   font-family: 'Bilo', sans-serif
+  //   font-size: $font-md
+  //   line-height: 1.8
+  //   color: $text-main
+  //   margin-bottom: .75rem
 
 
 
@@ -141,6 +151,9 @@
   text-align: center
   position: relative
   overflow: hidden
+  background-image: url('../img/bg-trabaja.png')
+  background-repeat: no-repeat
+  background-size: cover
 
   .psico-block4-title
     font-family: 'PlayfairDisplay'
@@ -270,7 +283,11 @@
     padding-top: 4rem
     padding-bottom: 4rem
 
-
+.psicoterapia-section
+  .blog-card
+    border: 1px solid $primary !important
+  p, .blog-card h3
+    color: $primary !important
 
 @media (max-width: 575.98px)
   .psico-hero .hero-img-wrapper
@@ -286,3 +303,4 @@
   .psico-block4 .block4-flower-left,
   .psico-block4 .block4-flower-right
     width: 200px
+

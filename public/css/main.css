@@ -12465,7 +12465,7 @@ textarea.form-control-lg {
   display: grid;
   grid-template-rows: auto auto 1fr auto;
   row-gap: 0.5rem;
-  border-radius: 30rem !important;
+  border-radius: 10rem !important;
   border: 1px solid rgba(255, 255, 255, 0.7);
   padding: 2.5rem 2.25rem;
   flex-direction: column;
@@ -12999,10 +12999,22 @@ textarea.form-control-lg {
 
 .psico-block2 {
   background-color: #f3eede;
+  background-image: url("../img/bg-salud.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+.psico-block2 .text-body-lg {
+  color: #214a4c;
 }
 .psico-block2 .rounded-4 {
   border-radius: 2rem;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+.psico-block2 p {
+  max-width: 900px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .psico-block2 .psico-block2-title {
   font-family: "PlayfairDisplay";
@@ -13011,12 +13023,8 @@ textarea.form-control-lg {
   color: #214a4c;
   margin-bottom: 1.5rem;
 }
-.psico-block2 .psico-block2-text {
-  font-family: "Bilo", sans-serif;
-  font-size: 1rem;
-  line-height: 1.8;
-  color: #2d2d2d;
-  margin-bottom: 0.75rem;
+.psico-block2 .psico-block2-uppercase {
+  text-transform: uppercase;
 }
 
 .psico-cards {
@@ -13075,6 +13083,9 @@ textarea.form-control-lg {
   text-align: center;
   position: relative;
   overflow: hidden;
+  background-image: url("../img/bg-trabaja.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .psico-block4 .psico-block4-title {
   font-family: "PlayfairDisplay";
@@ -13197,6 +13208,13 @@ textarea.form-control-lg {
     padding-bottom: 4rem;
   }
 }
+.psicoterapia-section .blog-card {
+  border: 1px solid #214a4c !important;
+}
+.psicoterapia-section p, .psicoterapia-section .blog-card h3, .psicoterapia-section .blog-card .h3 {
+  color: #214a4c !important;
+}
+
 @media (max-width: 575.98px) {
   .psico-hero .hero-img-wrapper {
     max-width: 100%;
