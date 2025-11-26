@@ -88,6 +88,7 @@ h2, .h2 {
   font-size: 2rem;
   line-height: 1.25;
   font-weight: 100;
+  letter-spacing: 0.1rem;
 }
 
 h3, .h3 {
@@ -98,10 +99,9 @@ h3, .h3 {
 
 .text-body-lg {
   font-family: "Bilo", sans-serif;
-  font-size: 1.25rem;
-  line-height: 1.8;
+  font-size: 1.125rem;
+  line-height: 1.6;
   font-weight: 300;
-  color: #2d2d2d;
 }
 
 /*!
@@ -12700,10 +12700,6 @@ textarea.form-control-lg {
   font-weight: 500;
 }
 .about-story p {
-  font-family: "Bilo", sans-serif;
-  font-size: 1.25rem;
-  line-height: 1.8;
-  font-weight: 300;
   color: #2d2d2d;
   margin-bottom: 1rem;
 }
@@ -12745,15 +12741,15 @@ textarea.form-control-lg {
   color: white;
 }
 .section-history .history-text {
-  font-size: 1.25rem;
-  line-height: 1.5;
-  font-weight: 300;
   color: white;
 }
 
 .section-team-intro {
   color: #ffffff;
   text-align: center;
+}
+.section-team-intro h2, .section-team-intro .h2 {
+  margin-bottom: 1.5rem;
 }
 .section-team-intro .section-team-intro-content {
   background: #738578;
@@ -12793,13 +12789,9 @@ textarea.form-control-lg {
   margin-bottom: 1.5rem;
 }
 .section-team-intro p {
-  font-family: "Bilo", sans-serif;
-  font-size: 1.25rem;
-  line-height: 1.8;
   max-width: 700px;
   margin: 0 auto;
-  font-weight: 300;
-  color: #ffffff;
+  color: white;
 }
 
 .team-founder {
@@ -13018,33 +13010,29 @@ textarea.form-control-lg {
   color: #214a4c;
   margin-bottom: 1rem;
 }
-.psico-hero .psico-text {
-  font-family: "Bilo", sans-serif;
-  font-size: 1rem;
-  line-height: 1.7;
-  color: #2d2d2d;
+.psico-hero p {
+  color: #214a4c;
   margin-bottom: 0.75rem;
 }
 .psico-hero .psico-list {
   margin: 1rem 0 1.5rem 0;
   padding-left: 1.3rem;
-  font-family: "Bilo", sans-serif;
-  font-size: 1rem;
-  color: #2d2d2d;
+  color: #214a4c;
 }
 .psico-hero .psico-list li {
-  margin-bottom: 0.35rem;
+  margin-bottom: 0;
 }
 .psico-hero .psico-quote {
   margin-top: 1.5rem;
   padding-left: 1.2rem;
-  border-left: 2px solid #8a729f;
-  font-family: "PlayfairDisplay";
-  font-size: 1rem;
   color: #214a4c;
-  font-style: italic;
+  font-weight: 500;
 }
 .psico-hero .btn.btn-outline-dark {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
   border-radius: 999px;
   padding: 0.55rem 1.8rem;
   font-size: 0.8rem;

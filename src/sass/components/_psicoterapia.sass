@@ -2,11 +2,8 @@
   position: relative
   overflow: hidden
   background: linear-gradient(to right, $hol-purple-light 36%, #ffffff 36%)
-  // Opcional: si quieres que en tablet/celular el fondo NO sea dividido
   @include media-macro()
     background: linear-gradient(to right, $hol-purple-light 30%, #ffffff 30%)
-  // @media (max-width: 991px)
-  //   background: $hol-purple-light
   .hero-img-wrapper
     max-width: 420px
     margin: 0 auto
@@ -26,34 +23,26 @@
     font-weight: 300
     color: $primary
     margin-bottom: 1rem
-
-  .psico-text
-    font-family: 'Bilo', sans-serif
-    font-size: $font-md
-    line-height: 1.7
-    color: $text-main
+  p
+    color: $primary
     margin-bottom: .75rem
 
   .psico-list
     margin: 1rem 0 1.5rem 0
     padding-left: 1.3rem
-    font-family: 'Bilo', sans-serif
-    font-size: $font-md
-    color: $text-main
-
+    color: $primary
     li
-      margin-bottom: .35rem
-
+      margin-bottom: 0
   .psico-quote
     margin-top: 1.5rem
     padding-left: 1.2rem
-    border-left: 2px solid $hol-purple-dark
-    font-family: 'PlayfairDisplay'
-    font-size: 1rem
     color: $primary
-    font-style: italic
-
+    font-weight: 500
   .btn.btn-outline-dark
+    display: block
+    margin-left: auto
+    margin-right: auto
+    width: fit-content
     border-radius: 999px
     padding: .55rem 1.8rem
     font-size: .8rem
