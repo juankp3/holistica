@@ -12247,17 +12247,67 @@ textarea.form-control-lg {
 .footer {
   background-color: #214a4c;
   color: #ffffff;
-  padding: 3rem 0 2rem 0;
+  padding: 5rem 0 3rem 0;
   font-size: 0.875rem;
+}
+.footer section {
+  margin: 0;
+}
+.footer ul li {
+  margin-bottom: 0rem;
+}
+.footer ul li a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.footer ul li a i {
+  width: 12px;
+  height: 12px;
+}
+.footer ul li a i.img__pointer {
+  background: url("../img/icon-pointer.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.footer ul li a i.img__world {
+  background: url("../img/icon-world.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.footer ul li a i.img__phone {
+  background: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.footer ul li a i.img__fb {
+  background: url("../img/icon-fb.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.footer ul li a i.img__ig {
+  background: url("../img/icon-ig.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.footer ul li a i.img__in {
+  background: url("../img/icon-in.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.footer ul li a i.img__sp {
+  background: url("../img/icon-sp.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .footer-text {
-  margin-bottom: 0.5rem;
+  margin: 0rem 0 3rem 0;
 }
 
 .footer-logo img {
   max-width: 140px;
-  margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .footer-title {
