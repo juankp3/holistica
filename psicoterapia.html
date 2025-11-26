@@ -3,25 +3,30 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Holística – Quiénes somos</title>
+  <title>Holística – Psicoterapia</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
+  <!-- Bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="public/css/main.css?v=3">
+
+  <!-- Estilos generales -->
+  <link rel="stylesheet" href="public/css/main.css?v=7">
 </head>
+
 <body>
 
+  <!-- ---------------- HEADER REUTILIZADO ---------------- -->
   <header class="site-header bg-dark-green text-white">
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <img src="public/img/holistica.png" alt="Holística Logo" class="me-2">
         </a>
-
+  
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
-
+  
         <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
           <ul class="navbar-nav align-items-lg-center">
             <li class="nav-item">
@@ -43,14 +48,14 @@
                 <li><a href="#">Recursos digitales</a></li>
               </ul>
             </li>
-
+  
             <li class="nav-item">
               <a class="nav-link" href="empresa.html">Empresas</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Blog</a>
             </li>
-
+  
             <li class="nav-item ms-lg-3">
               <a class="btn btn-light btn-sm" href="#">Agenda una cita</a>
             </li>
@@ -59,168 +64,240 @@
       </div>
     </nav>
   </header>
+
   <main>
 
-    <section class="about-hero">
-      <div class="container about-bg">
-        <div class="row align-items-center g-4">
+    <!-- -------------------------------------------------------- -->
+    <!-- HERO PRINCIPAL                                            -->
+    <!-- -------------------------------------------------------- -->
+
+    <section class="psico-hero py-5">
+      <div class="container">
+        <div class="row align-items-center g-5">
+
+          <div class="col-lg-6 text-center">
+            <div class="hero-img-wrapper">
+              <img src="public/img/psico_hero.png" alt="Terapia" class="img-fluid rounded-4">
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <h1 class="psico-title">Lo que te pasa no es el problema. Ignorarlo, sí</h1>
+
+            <p class="psico-text">
+              A veces llegas porque algo ya no da más: ansiedad, cansancio, falta de sentido o conflictos que se
+              repiten.
+            </p>
+
+            <p class="psico-text">
+              En cualquier caso o proceso, la psicoterapia puede ayudarte a:
+            </p>
+
+            <ul class="psico-list">
+              <li>Entender lo que te pasa más allá de lo evidente.</li>
+              <li>Habitar lo que sientes sin perderte en ello.</li>
+              <li>Encontrar herramientas reales que te devuelvan coherencia y calma.</li>
+            </ul>
+
+            <blockquote class="psico-quote">
+              “Tu proceso empieza cuando decides mirarte en serio.”
+            </blockquote>
+
+            <a href="#" class="btn btn-outline-dark mt-3">Agenda una cita</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------------------------------------- -->
+    <!-- SECCIÓN 2 – TEXTO PRINCIPAL                              -->
+    <!-- -------------------------------------------------------- -->
+
+    <section class="psico-block2 py-5 bg-white">
+      <div class="container">
+
+        <div class="rounded-4 shadow-sm p-5 bg-white text-center">
+
+          <h3 class="psico-block2-title">
+            La salud mental no se trabaja solo desde la mente
+          </h3>
+
+          <p class="psico-block2-text">
+            En Holística creemos que la salud mental se trabaja más allá de lo racional. Nuestros
+            procesos se sostienen en la honestidad, el cuerpo, la emoción y el vínculo.
+          </p>
+
+          <p class="psico-block2-text">
+            Trabajamos con lo que necesitas en este momento —no con lo ideal— para que consigas cambios reales en tu
+            vida.
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- -------------------------------------------------------- -->
+    <!-- SECCIÓN 3 – TARJETAS DE TERAPIA                          -->
+    <!-- -------------------------------------------------------- -->
+
+    <section class="psico-cards py-5">
+      <div class="container">
+
+        <div class="row g-5 justify-content-center">
+
+          <!-- TARJETA 1 -->
+          <div class="col-md-5">
+            <article class="psico-card text-center p-4 rounded-4 shadow-sm">
+              <img src="public/img/psico_individual.png" class="img-fluid rounded-4 mb-4" alt="Terapia Individual">
+              <h4 class="psico-card-title">Terapia Individual</h4>
+              <p class="psico-card-text">
+                Un espacio personalizado para trabajar en ti. Ideal si estás pasando por ansiedad,
+                crisis, estrés, duelos, cambios o simplemente necesitas un espacio para ti.
+              </p>
+              <a href="#" class="btn btn-outline-dark mt-2">Agenda una cita</a>
+            </article>
+          </div>
+
+          <!-- TARJETA 2 -->
+          <div class="col-md-5">
+            <article class="psico-card text-center p-4 rounded-4 shadow-sm">
+              <img src="public/img/psico_pareja.png" class="img-fluid rounded-4 mb-4" alt="Terapia de pareja">
+              <h4 class="psico-card-title">Terapia de Pareja o Familiar</h4>
+              <p class="psico-card-text">
+                Procesos de pareja y familia para entender patrones, mejorar comunicación y construir vínculos más
+                sanos.
+              </p>
+              <a href="#" class="btn btn-outline-dark mt-2">Agenda una cita</a>
+            </article>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- -------------------------------------------------------- -->
+    <!-- SECCIÓN 4 – TEXTO + IMAGEN FLORES                        -->
+    <!-- -------------------------------------------------------- -->
+
+    <section class="psico-block4 py-5 position-relative">
+
+      <div class="container">
+
+        <h3 class="psico-block4-title text-center">
+          Trabajamos con lo visible y con lo que no se ve
+        </h3>
+
+        <p class="psico-block4-text text-center mt-3">
+          Sabemos que no se trata solo de “pensar distinto”. Se trata también del cuerpo, las
+          emociones y lo que has sostenido en silencio. Por eso trabajamos desde lo humano y real.
+        </p>
+
+        <blockquote class="psico-quote text-center mt-4">
+          “Tu proceso empieza cuando decides mirarte en serio.”
+        </blockquote>
+
+      </div>
+
+      <img src="public/img/flower.png" class="block4-flower-left" alt="">
+      <img src="public/img/flower.png" class="block4-flower-right" alt="">
+
+    </section>
+
+    <!-- -------------------------------------------------------- -->
+    <!-- SECCIÓN 5 – FAQ + TARJETA IZQUIERDA                       -->
+    <!-- -------------------------------------------------------- -->
+
+    <section class="psico-faq py-5 bg-white">
+      <div class="container">
+        <div class="row g-5">
+
+          <!-- BLOQUE IZQUIERDO -->
           <div class="col-lg-4">
-            <h1 class="about-title">
-              Transformar también es animarse a mirar lo que duele
-            </h1>
+            <div class="faq-left text-center p-4 rounded-4 shadow-sm">
+              <h3 class="faq-left-title">La salud mental no se cuida solo con la mente</h3>
+              <p class="faq-left-text">
+                En Holística te acompañamos a sostener tu proceso desde la calma y la claridad.
+              </p>
+              <a href="#" class="btn btn-outline-dark mt-3">Agenda una cita</a>
+            </div>
           </div>
+
+          <!-- FAQ -->
           <div class="col-lg-8">
-            <div class="about-hero-photo-wrapper">
-              <img src="public/img/nosotros.png" alt="Joaquín y Viera en el consultorio"
-                class="img-fluid about-hero-photo">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+            <h4 class="faq-title mb-4">Resuelve tus dudas</h4>
 
-    <!-- BLOQUE HISTORIA + FOTO EQUIPO -->
-    <section class="about-story">
-      <div class="container">
-        <div class="story-card">
-          <div class="row g-4 align-items-center">
-            <div class="col-lg-10">
-              <!-- <h2 class="story-title">Nuestra historia</h2> -->
-              <p class="story-tile">En Holística trabajamos con lo real: lo que se ve, lo que no se dice, lo que duele y también lo que alivia.</p>
-              <p class="story-green-text">Creemos que la salud mental no se construye solo desde la mente.</p>
-              <p>
-              Por eso acompañamos procesos profundos, donde la profesionalidad se vive con cercanía y compromiso real, y donde mente,
-              cuerpo y alma se encuentran para generar un cambio auténtico y sostenible en el tiempo.
-              </p>
-              <p>
-                Aquí no hablamos de bienestar como algo super icial.
-              </p>
-              <p>
-                Hablamos de sanar en serio, de dejar de girar en lo mismo, de entender con la cabeza, sentir con el cuerpo y transformar
-              </p>
-            </div>
-            <div class="col-lg-2 story-photo-col">
-              <div class="story-photo-wrapper">
-                <img src="public/img/nosotros-grupo.png" alt="Grupo en Cusco" class="img-fluid story-photo">
+            <div class="accordion" id="accordionFaq">
+
+              <!-- ITEM 1 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq1">
+                    ¿Cuánto dura una sesión?
+                  </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    Una sesión dura entre 45 y 60 minutos dependiendo del proceso.
+                  </div>
+                </div>
               </div>
+
+              <!-- ITEM 2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">
+                    ¿Cada cuánto debo asistir?
+                  </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    Lo ideal es una sesión semanal.
+                  </div>
+                </div>
+              </div>
+
+              <!-- ITEM 3 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq3">
+                    ¿Qué pasa si no me siento cómodo con mi terapeuta?
+                  </button>
+                </h2>
+                <div id="faq3" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    Podemos ayudarte a encontrar otro terapeuta dentro del equipo.
+                  </div>
+                </div>
+              </div>
+
+              <!-- ITEM 4 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq4">
+                    ¿Puedo complementar mi terapia con otras prácticas?
+                  </button>
+                </h2>
+                <div id="faq4" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    Sí, nuestras terapias se complementan muy bien con trabajo corporal y energético.
+                  </div>
+                </div>
+              </div>
+
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- BANDA LILA "NUESTRA HISTORIA" LARGA -->
-    <section class="section-history">
-      <div class="container">
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="history-left">
-              <h1>Nuestra<br>Historia</h1>
-            </div>
-          </div>
-          <div class="col-md-7">
-            <div class="history-text">
-              <p>HOLÍSTICA NACIÓ CASI SIN PLANEARSE.</p>
-              <p>
-                En 2021, Viera estaba en un retiro en Cusco y sintió con claridad que su camino como psicóloga necesitaba abrirse a algo
-                más amplio: integrar lo espiritual y lo corporal a lo emocional.
-              </p>
-              <p>
-                Le escribió a Joaquín, que venía experimentando lo mismo desde el psicodrama y el trabajo energético. En esa
-                conversación —mitad profesional, mitad humana— nació Holística.
-              </p>
-              <p>Desde entonces, nos mueve un mismo propósito: la transformación solo ocurre cuando nos animamos a mirar lo que realmente
-              está pasando.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- BLOQUE VERDE "NUESTRO EQUIPO" -->
-    <section class="section-team-intro">
-      <div class="container text-center section-team-intro-content">
-        <h1>Nuestro Equipo</h1>
-        <p>
-          Somos psicólogos y psicoterapeutas que creemos en procesos reales, no perectos. Cada uno desde su enfoque, acompañamos
-          desde la autenticidad, la profundidad y el respeto por el proceso de cada persona.
-        </p><br>
-        <p>Nos mueve un mismo propósito: facilitar espacios donde mente, cuerpo y alma puedan encontrarse y generar cambio.</p>
-      </div>
-    </section>
-
-    <!-- FUNDADORA / FUNDADOR PRINCIPAL -->
-    <section class="team-founder">
-      <div class="container">
-        <div class="row g-4 align-items-center">
-          <div class="col-md-4 text-center photo">
-            <img src="public/img/viera-stenning.jpg" alt="Viera Stenning" class="img-fluid">
-          </div>
-          <div class="col-md-8">
-            <small>Fundadora</small>
-            <h4>Viera Stenning</h4>
-            <p>
-              Psicóloga clínica y psicoterapeuta. Trabajo con mente, cuerpo y alma,
-              pero sobre todo con la verdad. Me interesa acompañar procesos donde haya
-              espacio real para el descanso, la honestidad y la transformación.
-            </p>
-            <p>
-              Acompaño procesos individuales y grupales, con enfoque integrativo y corporal.
-              Me mueve especialmente trabajar con mujeres, maternidad, duelos y cambios de ciclo.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- GRID DE EQUIPO -->
-    <section class="section-team-grid">
-      <div class="container">
-        <h3 class="text-center mb-4 team-grid-title">Nuestro Equipo</h3>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <article class="team-card h-100">
-              <img src="public/img/equipo-1.jpg" alt="Integrante del equipo 1">
-              <h6>Adriana Paz Ruiz</h6>
-              <small>Psicóloga clínica y psicoterapeuta</small>
-              <p>
-                Acompaño procesos de transformación desde una mirada sensible y
-                práctica, integrando herramientas corporales y emocionales.
-              </p>
-            </article>
           </div>
 
-          <div class="col-md-4">
-            <article class="team-card h-100">
-              <img src="public/img/equipo-2.jpg" alt="Integrante del equipo 2">
-              <h6>Seiji Arakaki Hirano</h6>
-              <small>Psicólogo clínico y terapeuta</small>
-              <p>
-                Integro la psicoterapia con un espacio seguro para explorar
-                identidad, vínculos y propósito, desde una mirada cercana
-                y respetuosa.
-              </p>
-            </article>
-          </div>
-
-          <div class="col-md-4">
-            <article class="team-card h-100">
-              <img src="public/img/equipo-3.jpg" alt="Integrante del equipo 3">
-              <h6>Natalia Succar</h6>
-              <small>Psicóloga clínica y psicoterapeuta</small>
-              <p>
-                Creo profundamente en el acompañamiento cálido y honesto. Me
-                interesa trabajar con ansiedad, crisis y procesos de cambio vital.
-              </p>
-            </article>
-          </div>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- FOOTER (puedes reutilizar el mismo de index) -->
+  <!-- ---------------- FOOTER REUTILIZADO ---------------- -->
   <footer class="footer text-white py-5">
     <div class="container">
       <div class="row gy-4">
@@ -268,7 +345,10 @@
     </div>
   </footer>
 
+
+  <!-- JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>

@@ -1,6 +1,5 @@
 .bg-dark-green
   background-color: $primary
-
 .site-header .navbar
   padding-top: 1rem
   padding-bottom: 1rem
@@ -13,7 +12,6 @@
       height: 400px
       display: flex
       align-items: center
-
   .container
     position: relative
     z-index: 1
@@ -38,7 +36,6 @@
       background: url("../img/flower.png") no-repeat
       background-size: contain
       pointer-events: none
-
   .about-title
     font-family: 'PlayfairDisplay'
     font-size: 1.8rem
@@ -47,25 +44,19 @@
     margin-bottom: 1.5rem
     color: white
     text-align: center
-
   .about-text
     font-family: 'Bilo', sans-serif
     font-size: 1rem
     line-height: 1.7
     color: $text-main
     font-weight: 300
-
   .about-hero-photo-wrapper
     overflow: hidden
     box-shadow: 0 20px 40px rgba(0,0,0,0.15)
-
   .about-hero-photo
     display: block
     width: 100%
     height: auto
-
-
-
 .about-story
   padding: 4rem 0
   background-image: url('../img/bg-servicios.png')
@@ -211,7 +202,7 @@
     font-size: .8rem
     color: $secondary
 
-  h4.founder-name
+  h3.founder-name
     font-family: 'PlayfairDisplay'
     font-size: 2.5rem
     font-weight: 200
@@ -305,7 +296,7 @@
       grid-template-rows: 1fr 44px 40px auto
     @include media-sm()
       grid-template-rows: 1fr 44px 40px auto
-    h6, p 
+    h3, p 
       display: flex
       justify-content: center
       align-items: center
@@ -315,7 +306,7 @@
       height: auto
       object-fit: cover
       margin-bottom: 1rem
-    h6
+    h3
       font-family: 'PlayfairDisplay'
       font-size: 1.2rem
       color: $primary
@@ -331,20 +322,3 @@
       line-height: 1.6
       font-weight: 300
       color: $text-main
-
-
-
-@media (max-width: 991.98px)
-  .about-hero .about-title
-    font-size: 2rem
-  // .about-story .story-card
-  //   padding: 2rem
-  .team-founder .photo img
-    width: 220px
-
-@media (max-width: 767.98px)
-  .about-hero::before
-    width: 260px
-    height: 260px
-    top: 40px
-    left: -40px

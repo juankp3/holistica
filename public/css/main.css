@@ -78,6 +78,32 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-style: normal;
 }
 
+h1, .h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 100;
+}
+
+h2, .h2 {
+  font-size: 2rem;
+  line-height: 1.25;
+  font-weight: 100;
+}
+
+h3, .h3 {
+  font-size: 1.75rem;
+  line-height: 1.3;
+  font-weight: 100;
+}
+
+.text-body-lg {
+  font-family: "Bilo", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.8;
+  font-weight: 300;
+  color: #2d2d2d;
+}
+
 /*!
  * Bootstrap  v5.3.8 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
@@ -11938,6 +11964,130 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.hero {
+  align-items: center;
+  padding-top: 2rem;
+  background: #214a4c;
+}
+
+.hero--home {
+  background-image: url("../img/cover.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.hero-panel {
+  position: relative;
+  z-index: 3;
+  margin: 0 auto;
+  background: #738578;
+  border-radius: 1.75rem;
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.18);
+  top: 3.5rem;
+  padding: 8rem;
+}
+@media screen and (max-width: 992px) {
+  .hero-panel {
+    padding: 4rem 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero-panel .divider-vertical {
+    display: none;
+  }
+}
+.hero-panel img.rounded-circle {
+  height: 150px;
+}
+@media screen and (max-width: 768px) {
+  .hero-panel .text-center:nth-child(1) {
+    padding-bottom: 32px;
+  }
+}
+.hero-panel .hero-text {
+  position: relative;
+  padding-left: 32px;
+  padding-right: 0px;
+  font-style: normal;
+}
+@media screen and (max-width: 992px) {
+  .hero-panel .hero-text {
+    padding-left: 0px;
+  }
+}
+.hero-panel .hero-text .mb-2 {
+  font-family: "PlayfairDisplay";
+  font-size: 2rem;
+  padding-bottom: 32px;
+  letter-spacing: 0.1rem;
+  line-height: 1.2;
+  font-weight: 100;
+}
+.hero-panel .hero-text .small {
+  font-size: 1rem;
+  font-style: normal;
+  line-height: 1.5;
+  font-weight: 100;
+  color: white;
+  letter-spacing: 0.1rem;
+}
+.hero-panel span {
+  display: flow;
+  font-family: "PlayfairDisplay";
+  font-style: normal;
+  color: white !important;
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+}
+.hero-panel small, .hero-panel .small {
+  color: white !important;
+  font-family: "Bilo", sans-serif;
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+  font-size: 1.1rem;
+}
+
+.divider-vertical {
+  position: absolute;
+  top: 100px;
+  height: 60%;
+  width: 2px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.services-section {
+  position: relative;
+  margin-top: -3.5rem;
+  background: #f6f3ec;
+  padding-top: 6rem;
+}
+
+.hero-content {
+  padding-top: 8rem !important;
+  font-family: "PlayfairDisplay";
+  font-style: normal;
+  font-weight: 100;
+}
+@media screen and (max-width: 768px) {
+  .hero-content {
+    padding-top: 4rem !important;
+  }
+}
+.hero-content .small {
+  font-family: "Bilo", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+}
+.hero-content .lead {
+  font-family: "Bilo", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 1.25rem;
+  letter-spacing: 0.1rem;
+}
+
 .navbar {
   position: relative;
   z-index: 1000;
@@ -12094,127 +12244,54 @@ textarea.form-control-lg {
     transform: translateY(0);
   }
 }
-.hero {
-  align-items: center;
-  padding-top: 2rem;
-  background: #214a4c;
+.footer {
+  background-color: #214a4c;
+  color: #ffffff;
+  padding: 3rem 0 2rem 0;
+  font-size: 0.875rem;
 }
 
-.hero--home {
-  background-image: url("../img/cover.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
+.footer-text {
+  margin-bottom: 0.5rem;
 }
 
-.hero-panel {
-  position: relative;
-  z-index: 3;
-  margin: 0 auto;
-  background: #738578;
-  border-radius: 1.75rem;
-  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.18);
-  top: 3.5rem;
-  padding: 8rem;
+.footer-logo img {
+  max-width: 140px;
+  margin-top: 1.5rem;
 }
-@media screen and (max-width: 992px) {
-  .hero-panel {
-    padding: 4rem 2rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  .hero-panel .divider-vertical {
-    display: none;
-  }
-}
-.hero-panel img.rounded-circle {
-  height: 150px;
-}
-@media screen and (max-width: 768px) {
-  .hero-panel .text-center:nth-child(1) {
-    padding-bottom: 32px;
-  }
-}
-.hero-panel .hero-text {
-  position: relative;
-  padding-left: 32px;
-  padding-right: 0px;
-  font-style: normal;
-}
-@media screen and (max-width: 992px) {
-  .hero-panel .hero-text {
-    padding-left: 0px;
-  }
-}
-.hero-panel .hero-text .mb-2 {
-  font-family: "PlayfairDisplay";
-  font-size: 2rem;
-  padding-bottom: 32px;
-  letter-spacing: 0.1rem;
-  line-height: 1.2;
-  font-weight: 100;
-}
-.hero-panel .hero-text .small {
+
+.footer-title {
+  font-family: "PlayfairDisplay", serif;
   font-size: 1rem;
-  font-style: normal;
-  line-height: 1.5;
-  font-weight: 100;
-  color: white;
-  letter-spacing: 0.1rem;
-}
-.hero-panel h6, .hero-panel .h6 {
-  font-family: "PlayfairDisplay";
-  font-style: normal;
-  color: white !important;
-  font-weight: 100;
-  letter-spacing: 0.1rem;
-}
-.hero-panel small, .hero-panel .small {
-  color: white !important;
-  font-family: "Bilo", sans-serif;
-  font-weight: 100;
-  letter-spacing: 0.1rem;
-  font-size: 1.1rem;
+  letter-spacing: 0.08em;
+  text-transform: none;
+  margin-bottom: 1rem;
+  color: #ffffff;
 }
 
-.divider-vertical {
-  position: absolute;
-  top: 100px;
-  height: 60%;
-  width: 2px;
-  background-color: rgba(255, 255, 255, 0.4);
+.footer-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
 }
 
-.services-section {
-  position: relative;
-  margin-top: -3.5rem;
-  background: #f6f3ec;
-  padding-top: 6rem;
+.footer-list li {
+  margin-bottom: 0.35rem;
 }
 
-.hero-content {
-  padding-top: 8rem !important;
-  font-family: "PlayfairDisplay";
-  font-style: normal;
-  font-weight: 100;
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
 }
-@media screen and (max-width: 768px) {
-  .hero-content {
-    padding-top: 4rem !important;
-  }
+
+.footer a:hover {
+  text-decoration: underline;
 }
-.hero-content .small {
-  font-family: "Bilo", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  letter-spacing: 0.1rem;
-}
-.hero-content .lead {
-  font-family: "Bilo", sans-serif;
-  font-style: normal;
-  font-weight: 100;
-  font-size: 1.25rem;
-  letter-spacing: 0.1rem;
+
+.footer-copy {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 1rem;
+  margin-top: 2rem;
 }
 
 .services-section {
@@ -12278,8 +12355,6 @@ textarea.form-control-lg {
   }
 }
 .services-section h2, .services-section .h2 {
-  font-size: 2.5rem;
-  font-weight: 400;
   color: #214a4c;
   letter-spacing: 0.2em;
   margin-bottom: 2.5rem !important;
@@ -12316,10 +12391,6 @@ textarea.form-control-lg {
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
-.service-card .mb-2 {
-  font-size: 1.5rem;
-  font-weight: 300;
-}
 .service-card .small {
   color: white;
   font-size: 0.8rem;
@@ -12337,8 +12408,7 @@ textarea.form-control-lg {
   transform: translateY(-4px);
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
 }
-.service-card h5, .service-card .h5 {
-  font-size: 1.35rem;
+.service-card h3, .service-card .h3 {
   margin-bottom: 0.75rem;
 }
 .service-card p {
@@ -12371,14 +12441,6 @@ textarea.form-control-lg {
   background: #beb4d2;
 }
 
-@media (max-width: 768px) {
-  .service-card {
-    text-align: center;
-  }
-  .service-card .service-icon {
-    margin-bottom: 1rem;
-  }
-}
 .blog-section {
   position: relative;
   padding-top: 6rem;
@@ -12391,11 +12453,8 @@ textarea.form-control-lg {
   background-size: cover;
 }
 .blog-section h2, .blog-section .h2 {
-  font-size: 2.3rem;
-  letter-spacing: 0.2em;
   margin-bottom: 0;
   color: white;
-  font-weight: 400;
 }
 .blog-section p {
   font-size: 0.9rem;
@@ -12415,7 +12474,7 @@ textarea.form-control-lg {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   margin: 12px;
 }
-.blog-card h5, .blog-card .h5 {
+.blog-card h3, .blog-card .h3 {
   font-size: 1.05rem;
   line-height: 1.5;
   color: white;
@@ -12480,113 +12539,6 @@ textarea.form-control-lg {
   color: #f3eeed;
 }
 
-@media (max-width: 991.98px) {
-  .blog-section {
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem;
-  }
-  .blog-card {
-    padding: 2rem 1.75rem;
-  }
-}
-@media (max-width: 575.98px) {
-  .blog-card {
-    border-radius: 2rem;
-  }
-  .blog-image-wrapper {
-    padding: 0.9rem;
-  }
-}
-.footer {
-  background-color: #214a4c;
-  color: #f5f3ef;
-  font-family: "Bilo", sans-serif;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-}
-.footer .logo {
-  height: 40px;
-  margin-bottom: 1rem;
-}
-.footer h4, .footer .h4, .footer h6, .footer .h6 {
-  font-weight: 400;
-  letter-spacing: 0.08em;
-  font-size: 0.9rem;
-  margin-bottom: 1.5rem;
-}
-.footer h4, .footer .h4 {
-  font-size: 1.6rem;
-  text-transform: none;
-  letter-spacing: 0.03em;
-}
-.footer span.fw-light {
-  font-weight: 300;
-}
-.footer p {
-  font-size: 0.9rem;
-  line-height: 1.6;
-  color: rgba(245, 243, 239, 0.8);
-}
-.footer .row {
-  align-items: flex-start;
-}
-.footer .footer-link {
-  display: inline-block;
-  color: rgba(245, 243, 239, 0.85);
-  font-size: 0.9rem;
-  margin-bottom: 0.35rem;
-  text-decoration: none;
-  letter-spacing: 0.03em;
-}
-.footer .footer-link:hover {
-  color: #ffffff;
-  text-decoration: underline;
-  text-underline-offset: 0.2rem;
-}
-.footer .col-md-4 p.small {
-  margin-bottom: 0.45rem;
-}
-.footer ul {
-  padding-left: 0;
-  margin: 0;
-  list-style: none;
-}
-.footer ul li {
-  margin-bottom: 0.35rem;
-}
-.footer .col-md-2 ul li {
-  margin-bottom: 0.6rem;
-}
-.footer .text-center.small {
-  margin-top: 3rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
-  color: rgba(245, 243, 239, 0.7);
-  font-size: 0.78rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-@media (max-width: 991.98px) {
-  .footer {
-    text-align: left;
-  }
-  .footer .col-md-4,
-  .footer .col-md-3,
-  .footer .col-md-2 {
-    margin-bottom: 2rem;
-  }
-}
-@media (max-width: 575.98px) {
-  .footer {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-  }
-  .footer h4, .footer .h4 {
-    font-size: 1.4rem;
-  }
-}
 .bg-dark-green {
   background-color: #214a4c;
 }
@@ -12830,7 +12782,7 @@ textarea.form-control-lg {
   font-size: 0.8rem;
   color: #738578;
 }
-.team-founder h4.founder-name, .team-founder .founder-name.h4 {
+.team-founder h3.founder-name, .team-founder .founder-name.h3 {
   font-family: "PlayfairDisplay";
   font-size: 2.5rem;
   font-weight: 200;
@@ -12839,7 +12791,7 @@ textarea.form-control-lg {
   letter-spacing: 0.1rem;
   position: relative;
 }
-.team-founder h4.founder-name::after, .team-founder .founder-name.h4::after {
+.team-founder h3.founder-name::after, .team-founder .founder-name.h3::after {
   content: "";
   display: block;
   width: 140px;
@@ -12953,7 +12905,7 @@ textarea.form-control-lg {
     grid-template-rows: 1fr 44px 40px auto;
   }
 }
-.section-team-grid .team-card h6, .section-team-grid .team-card .h6, .section-team-grid .team-card p {
+.section-team-grid .team-card h3, .section-team-grid .team-card .h3, .section-team-grid .team-card p {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12965,7 +12917,7 @@ textarea.form-control-lg {
   object-fit: cover;
   margin-bottom: 1rem;
 }
-.section-team-grid .team-card h6, .section-team-grid .team-card .h6 {
+.section-team-grid .team-card h3, .section-team-grid .team-card .h3 {
   font-family: "PlayfairDisplay";
   font-size: 1.2rem;
   color: #214a4c;
@@ -12985,19 +12937,291 @@ textarea.form-control-lg {
   color: #2d2d2d;
 }
 
-@media (max-width: 991.98px) {
-  .about-hero .about-title {
-    font-size: 2rem;
-  }
-  .team-founder .photo img {
-    width: 220px;
+.psico-hero {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to right, #beb4d2 36%, #ffffff 36%);
+}
+@media screen and (max-width: 1600px) {
+  .psico-hero {
+    background: linear-gradient(to right, #beb4d2 30%, #ffffff 30%);
   }
 }
-@media (max-width: 767.98px) {
-  .about-hero::before {
-    width: 260px;
-    height: 260px;
-    top: 40px;
-    left: -40px;
+.psico-hero .hero-img-wrapper {
+  max-width: 420px;
+  margin: 0 auto;
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+.psico-hero .hero-img-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.psico-hero .psico-title {
+  font-family: "PlayfairDisplay";
+  font-size: 2rem;
+  line-height: 1.3;
+  font-weight: 300;
+  color: #214a4c;
+  margin-bottom: 1rem;
+}
+.psico-hero .psico-text {
+  font-family: "Bilo", sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #2d2d2d;
+  margin-bottom: 0.75rem;
+}
+.psico-hero .psico-list {
+  margin: 1rem 0 1.5rem 0;
+  padding-left: 1.3rem;
+  font-family: "Bilo", sans-serif;
+  font-size: 1rem;
+  color: #2d2d2d;
+}
+.psico-hero .psico-list li {
+  margin-bottom: 0.35rem;
+}
+.psico-hero .psico-quote {
+  margin-top: 1.5rem;
+  padding-left: 1.2rem;
+  border-left: 2px solid #8a729f;
+  font-family: "PlayfairDisplay";
+  font-size: 1rem;
+  color: #214a4c;
+  font-style: italic;
+}
+.psico-hero .btn.btn-outline-dark {
+  border-radius: 999px;
+  padding: 0.55rem 1.8rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  border-color: #214a4c;
+  color: #214a4c;
+  background-color: transparent;
+}
+.psico-hero .btn.btn-outline-dark:hover {
+  background-color: #214a4c;
+  color: #ffffff;
+}
+
+.psico-block2 {
+  background-color: #f3eede;
+}
+.psico-block2 .rounded-4 {
+  border-radius: 2rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+.psico-block2 .psico-block2-title {
+  font-family: "PlayfairDisplay";
+  font-size: 1.7rem;
+  font-weight: 300;
+  color: #214a4c;
+  margin-bottom: 1.5rem;
+}
+.psico-block2 .psico-block2-text {
+  font-family: "Bilo", sans-serif;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #2d2d2d;
+  margin-bottom: 0.75rem;
+}
+
+.psico-cards {
+  background-color: #fafafa;
+}
+.psico-cards .psico-card {
+  background-color: #ffffff;
+  border-radius: 3rem;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 2.5rem 2.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+.psico-cards .psico-card img {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 2rem;
+  margin-bottom: 1.5rem;
+  object-fit: cover;
+}
+.psico-cards .psico-card .psico-card-title {
+  font-family: "PlayfairDisplay";
+  font-size: 1.3rem;
+  color: #214a4c;
+  margin-bottom: 0.75rem;
+}
+.psico-cards .psico-card .psico-card-text {
+  font-family: "Bilo", sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #2d2d2d;
+  margin-bottom: 1.5rem;
+}
+.psico-cards .psico-card .btn.btn-outline-dark {
+  border-radius: 999px;
+  padding: 0.45rem 1.6rem;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  border-color: #214a4c;
+  color: #214a4c;
+  background-color: transparent;
+}
+.psico-cards .psico-card .btn.btn-outline-dark:hover {
+  background-color: #214a4c;
+  color: #ffffff;
+}
+
+.psico-block4 {
+  background-color: #c7c2b8;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.psico-block4 .psico-block4-title {
+  font-family: "PlayfairDisplay";
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #ffffff;
+}
+.psico-block4 .psico-block4-text {
+  font-family: "Bilo", sans-serif;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #ffffff;
+  max-width: 700px;
+  margin: 1.5rem auto 0 auto;
+}
+.psico-block4 .psico-quote {
+  margin-top: 2rem;
+  font-family: "PlayfairDisplay";
+  font-size: 1rem;
+  color: #ffffff;
+  font-style: italic;
+}
+.psico-block4 .block4-flower-left,
+.psico-block4 .block4-flower-right {
+  position: absolute;
+  width: 260px;
+  height: auto;
+  opacity: 0.18;
+  pointer-events: none;
+}
+.psico-block4 .block4-flower-left {
+  top: -40px;
+  left: -40px;
+}
+.psico-block4 .block4-flower-right {
+  bottom: -40px;
+  right: -40px;
+  transform: rotate(180deg);
+}
+
+.psico-faq {
+  background-color: #f3eede;
+}
+.psico-faq .faq-left {
+  background-color: #ffffff;
+  border-radius: 2.5rem;
+  padding: 2.5rem 2.25rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+.psico-faq .faq-left-title {
+  font-family: "PlayfairDisplay";
+  font-size: 1.5rem;
+  color: #214a4c;
+  margin-bottom: 1rem;
+}
+.psico-faq .faq-left-text {
+  font-family: "Bilo", sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #2d2d2d;
+}
+.psico-faq .faq-title {
+  font-family: "PlayfairDisplay";
+  font-size: 1.4rem;
+  color: #214a4c;
+  font-weight: 300;
+}
+.psico-faq .accordion-item {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  background-color: transparent;
+}
+.psico-faq .accordion-button {
+  background-color: transparent;
+  font-family: "Bilo", sans-serif;
+  font-size: 1rem;
+  color: #214a4c;
+  padding-left: 0;
+  padding-right: 0;
+  box-shadow: none;
+}
+.psico-faq .accordion-button:focus {
+  box-shadow: none;
+}
+.psico-faq .accordion-button::after {
+  filter: brightness(0) saturate(100%) invert(26%) sepia(7%) saturate(929%) hue-rotate(122deg) brightness(92%) contrast(89%);
+}
+.psico-faq .accordion-body {
+  font-family: "Bilo", sans-serif;
+  font-size: 1rem;
+  color: #2d2d2d;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0.25rem;
+  padding-bottom: 1rem;
+}
+
+@media (max-width: 991.98px) {
+  .psico-hero {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .psico-hero .psico-title {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+  .psico-hero .psico-text,
+  .psico-hero .psico-list,
+  .psico-hero .psico-quote {
+    text-align: left;
+  }
+  .psico-block2 .psico-block2-title {
+    font-size: 1.5rem;
+  }
+  .psico-cards .psico-card {
+    margin-bottom: 1rem;
+  }
+  .psico-block4 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .psico-hero .hero-img-wrapper {
+    max-width: 100%;
+  }
+  .psico-block2 .rounded-4 {
+    padding: 2.2rem 1.8rem;
+  }
+  .psico-cards .psico-card {
+    border-radius: 2rem;
+    padding: 2rem 1.6rem;
+  }
+  .psico-block4 .block4-flower-left,
+  .psico-block4 .block4-flower-right {
+    width: 200px;
   }
 }
