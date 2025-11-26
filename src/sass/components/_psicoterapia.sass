@@ -1,0 +1,299 @@
+.psico-hero
+  position: relative
+  overflow: hidden
+  background: linear-gradient(to right, $hol-purple-light 36%, #ffffff 36%)
+  // Opcional: si quieres que en tablet/celular el fondo NO sea dividido
+  @include media-macro()
+    background: linear-gradient(to right, $hol-purple-light 30%, #ffffff 30%)
+  // @media (max-width: 991px)
+  //   background: $hol-purple-light
+  .hero-img-wrapper
+    max-width: 420px
+    margin: 0 auto
+    border-radius: 2rem
+    overflow: hidden
+    box-shadow: $shadow-soft
+    img
+      display: block
+      width: 100%
+      height: auto
+      object-fit: cover
+
+  .psico-title
+    font-family: 'PlayfairDisplay'
+    font-size: 2rem
+    line-height: 1.3
+    font-weight: 300
+    color: $primary
+    margin-bottom: 1rem
+
+  .psico-text
+    font-family: 'Bilo', sans-serif
+    font-size: $font-md
+    line-height: 1.7
+    color: $text-main
+    margin-bottom: .75rem
+
+  .psico-list
+    margin: 1rem 0 1.5rem 0
+    padding-left: 1.3rem
+    font-family: 'Bilo', sans-serif
+    font-size: $font-md
+    color: $text-main
+
+    li
+      margin-bottom: .35rem
+
+  .psico-quote
+    margin-top: 1.5rem
+    padding-left: 1.2rem
+    border-left: 2px solid $hol-purple-dark
+    font-family: 'PlayfairDisplay'
+    font-size: 1rem
+    color: $primary
+    font-style: italic
+
+  .btn.btn-outline-dark
+    border-radius: 999px
+    padding: .55rem 1.8rem
+    font-size: .8rem
+    text-transform: uppercase
+    letter-spacing: .12em
+    border-color: $primary
+    color: $primary
+    background-color: transparent
+
+    &:hover
+      background-color: $primary
+      color: $text-light
+
+
+
+// ---------- BLOQUE 2 – TEXTO PRINCIPAL ----------
+.psico-block2
+  background-color: $bg-base
+
+  .rounded-4
+    border-radius: 2rem
+    box-shadow: $shadow-soft
+
+  .psico-block2-title
+    font-family: 'PlayfairDisplay'
+    font-size: 1.7rem
+    font-weight: 300
+    color: $primary
+    margin-bottom: 1.5rem
+
+  .psico-block2-text
+    font-family: 'Bilo', sans-serif
+    font-size: $font-md
+    line-height: 1.8
+    color: $text-main
+    margin-bottom: .75rem
+
+
+
+// ---------- BLOQUE 3 – TARJETAS DE TERAPIA ----------
+.psico-cards
+  background-color: $gray-100
+
+  .psico-card
+    background-color: $text-light
+    border-radius: 3rem
+    border: 1px solid rgba(0,0,0,.08)
+    padding: 2.5rem 2.25rem
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    box-shadow: $shadow-soft
+
+    img
+      width: 100%
+      max-width: 280px
+      border-radius: 2rem
+      margin-bottom: 1.5rem
+      object-fit: cover
+
+    .psico-card-title
+      font-family: 'PlayfairDisplay'
+      font-size: 1.3rem
+      color: $primary
+      margin-bottom: .75rem
+
+    .psico-card-text
+      font-family: 'Bilo', sans-serif
+      font-size: $font-md
+      line-height: 1.7
+      color: $text-main
+      margin-bottom: 1.5rem
+
+    .btn.btn-outline-dark
+      border-radius: 999px
+      padding: .45rem 1.6rem
+      font-size: .78rem
+      text-transform: uppercase
+      letter-spacing: .12em
+      border-color: $primary
+      color: $primary
+      background-color: transparent
+
+      &:hover
+        background-color: $primary
+        color: $text-light
+
+
+
+// ---------- BLOQUE 4 – TEXTO + FLORES ----------
+.psico-block4
+  background-color: $bg-section
+  padding-top: 5rem
+  padding-bottom: 5rem
+  text-align: center
+  position: relative
+  overflow: hidden
+
+  .psico-block4-title
+    font-family: 'PlayfairDisplay'
+    font-size: 1.8rem
+    font-weight: 300
+    color: $text-light
+
+  .psico-block4-text
+    font-family: 'Bilo', sans-serif
+    font-size: $font-md
+    line-height: 1.8
+    color: $text-light
+    max-width: 700px
+    margin: 1.5rem auto 0 auto
+
+  .psico-quote
+    margin-top: 2rem
+    font-family: 'PlayfairDisplay'
+    font-size: 1rem
+    color: $text-light
+    font-style: italic
+
+  .block4-flower-left,
+  .block4-flower-right
+    position: absolute
+    width: 260px
+    height: auto
+    opacity: .18
+    pointer-events: none
+
+  .block4-flower-left
+    top: -40px
+    left: -40px
+
+  .block4-flower-right
+    bottom: -40px
+    right: -40px
+    transform: rotate(180deg)
+
+
+
+// ---------- BLOQUE 5 – FAQ + TARJETA IZQUIERDA ----------
+.psico-faq
+  background-color: $bg-base
+
+  .faq-left
+    background-color: $text-light
+    border-radius: 2.5rem
+    padding: 2.5rem 2.25rem
+    box-shadow: $shadow-soft
+
+  .faq-left-title
+    font-family: 'PlayfairDisplay'
+    font-size: 1.5rem
+    color: $primary
+    margin-bottom: 1rem
+
+  .faq-left-text
+    font-family: 'Bilo', sans-serif
+    font-size: $font-md
+    line-height: 1.7
+    color: $text-main
+
+  .faq-title
+    font-family: 'PlayfairDisplay'
+    font-size: 1.4rem
+    color: $primary
+    font-weight: 300
+
+  // Accordion Bootstrap personalizado
+  .accordion-item
+    border: none
+    border-bottom: 1px solid rgba(0,0,0,.08)
+    background-color: transparent
+
+  .accordion-button
+    background-color: transparent
+    font-family: 'Bilo', sans-serif
+    font-size: $font-md
+    color: $primary
+    padding-left: 0
+    padding-right: 0
+    box-shadow: none
+
+    &:focus
+      box-shadow: none
+
+    &::after
+      filter: brightness(0) saturate(100%) invert(26%) sepia(7%) saturate(929%) hue-rotate(122deg) brightness(92%) contrast(89%)
+
+  .accordion-body
+    font-family: 'Bilo', sans-serif
+    font-size: $font-md
+    color: $text-main
+    padding-left: 0
+    padding-right: 0
+    padding-top: .25rem
+    padding-bottom: 1rem
+
+
+
+// ========================================
+// RESPONSIVE
+// ========================================
+
+@media (max-width: 991.98px)
+  .psico-hero
+    padding-top: 3rem
+    padding-bottom: 3rem
+
+    .psico-title
+      margin-top: 1.5rem
+      text-align: center
+
+    .psico-text,
+    .psico-list,
+    .psico-quote
+      text-align: left
+
+  .psico-block2 .psico-block2-title
+    font-size: 1.5rem
+
+  .psico-cards .psico-card
+    margin-bottom: 1rem
+
+  .psico-block4
+    padding-top: 4rem
+    padding-bottom: 4rem
+
+
+
+@media (max-width: 575.98px)
+  .psico-hero .hero-img-wrapper
+    max-width: 100%
+
+  .psico-block2 .rounded-4
+    padding: 2.2rem 1.8rem
+
+  .psico-cards .psico-card
+    border-radius: 2rem
+    padding: 2rem 1.6rem
+
+  .psico-block4 .block4-flower-left,
+  .psico-block4 .block4-flower-right
+    width: 200px
