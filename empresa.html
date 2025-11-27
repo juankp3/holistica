@@ -3,14 +3,19 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Holística – Quiénes somos</title>
+  <title>Holística – Empresas</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
+  <!-- Bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="public/css/main.css?v=7">
+
+  <!-- Estilos generales -->
+  <link rel="stylesheet" href="public/css/main.css?v=8">
 </head>
+
 <body>
 
+  <!-- ---------------- HEADER REUTILIZADO ---------------- -->
   <header class="site-header bg-dark-green text-white">
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
@@ -28,24 +33,15 @@
               <a class="nav-link" href="index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="quienes-somos.html">Quiénes somos</a>
+              <a class="nav-link" href="quienes-somos.html">Quiénes somos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Psicoterapia</a>
+              <a class="nav-link" href="psicoterapia.html">Psicoterapia</a>
             </li>
             <li class="nav-item dropdown-hover">
-              <a class="nav-link" href="#" id="desarrolloDropdown">
-                Desarrollo personal
+              <a class="nav-link active" href="empresa.html" id="desarrolloDropdown">
+                Empresas
               </a>
-              <ul class="dropdown-submenu" aria-labelledby="desarrolloDropdown">
-                <li><a href="#">Programas</a></li>
-                <li><a href="#">Experiencias</a></li>
-                <li><a href="#">Recursos digitales</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="empresa.html">Empresas</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Blog</a>
@@ -59,187 +55,286 @@
       </div>
     </nav>
   </header>
+
   <main>
 
-    <section class="about-hero">
-      <div class="container about-bg">
-        <div class="row align-items-center g-4">
-          <div class="col-lg-4">
-            <h1 class="about-title">
-              Transformar también es animarse a mirar lo que duele
-            </h1>
-          </div>
-          <div class="col-lg-8">
-            <div class="about-hero-photo-wrapper">
-              <img src="public/img/nosotros.png" alt="Joaquín y Viera en el consultorio"
-                class="img-fluid about-hero-photo">
-            </div>
-          </div>
+    <!-- ==================================================== -->
+    <!-- 1. HERO EMPRESAS                                      -->
+    <!-- ==================================================== -->
+    <section class="empresa-hero py-5">
+      <div class="container text-center text-body-lg py-5">
+        <div class="py-5">
+          <h1 class="empresa-hero-title">Wellbeing Transformador</h1>
+          <p class="empresa-hero-subtitle">
+            Acompañamos a empresas conscientes a cuidar a las personas de forma profunda y real.
+          </p>
         </div>
       </div>
     </section>
 
-    <!-- BLOQUE HISTORIA + FOTO EQUIPO -->
-    <section class="about-story">
-      <div class="container">
-        <div class="story-card">
-          <div class="row g-4 align-items-center">
-            <div class="col-lg-10">
-              <!-- <h2 class="story-title">Nuestra historia</h2> -->
-              <p class="story-tile">En Holística trabajamos con lo real: lo que se ve, lo que no se dice, lo que duele y también lo que alivia.</p>
-              <p class="story-green-text">Creemos que la salud mental no se construye solo desde la mente.</p>
-              <p>
-              Por eso acompañamos procesos profundos, donde la profesionalidad se vive con cercanía y compromiso real, y donde mente,
-              cuerpo y alma se encuentran para generar un cambio auténtico y sostenible en el tiempo.
-              </p>
-              <p>
-                Aquí no hablamos de bienestar como algo super icial.
-              </p>
-              <p>
-                Hablamos de sanar en serio, de dejar de girar en lo mismo, de entender con la cabeza, sentir con el cuerpo y transformar
-              </p>
-            </div>
-            <div class="col-lg-2 story-photo-col">
-              <div class="story-photo-wrapper">
-                <img src="public/img/nosotros-grupo.png" alt="Grupo en Cusco" class="img-fluid story-photo">
-              </div>
-            </div>
-          </div>
+    <!-- ==================================================== -->
+    <!-- 2. BANDA TEST DESCARGABLE                              -->
+    <!-- (reutiliza patrón de psico-block2)                     -->
+    <!-- ==================================================== -->
+    <section class="empresa-test py-5">
+      <div class="container py-5">
+        <div class="empresa-test-box text-center text-body-lg rounded-4 mx-auto py-5">
+          <p class="mb-3">
+            Descarga gratis nuestro test para evaluar si tu programa de bienestar está generando un impacto real en tu cultura
+            organizacional.
+          </p>
+          <a href="#" class="btn btn-outline-light btn-sm mt-2">
+            Descargalo aquí
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- BANDA LILA "NUESTRA HISTORIA" LARGA -->
-    <section class="section-history">
-      <div class="container">
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="history-left">
-              <h1>Nuestra<br>Historia</h1>
-            </div>
-          </div>
-          <div class="col-md-7">
-            <div class="history-text">
-              <p>HOLÍSTICA NACIÓ CASI SIN PLANEARSE.</p>
-              <p>
-                En 2021, Viera estaba en un retiro en Cusco y sintió con claridad que su camino como psicóloga necesitaba abrirse a algo
-                más amplio: integrar lo espiritual y lo corporal a lo emocional.
-              </p>
-              <p>
-                Le escribió a Joaquín, que venía experimentando lo mismo desde el psicodrama y el trabajo energético. En esa
-                conversación —mitad profesional, mitad humana— nació Holística.
-              </p>
-              <p>Desde entonces, nos mueve un mismo propósito: la transformación solo ocurre cuando nos animamos a mirar lo que realmente
-              está pasando.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- BLOQUE VERDE "NUESTRO EQUIPO" -->
-    <section class="section-team-intro">
-      <div class="container text-center section-team-intro-content">
-        <h1>Nuestro Equipo</h1>
-        <p>
-          Somos psicólogos y psicoterapeutas que creemos en procesos reales, no perectos. Cada uno desde su enfoque, acompañamos
-          desde la autenticidad, la profundidad y el respeto por el proceso de cada persona.
-        </p><br>
-        <p>Nos mueve un mismo propósito: facilitar espacios donde mente, cuerpo y alma puedan encontrarse y generar cambio.</p>
-      </div>
-    </section>
-
-    <!-- FUNDADORA / FUNDADOR PRINCIPAL -->
-    <section class="team-founder">
+    <!-- ==================================================== -->
+    <!-- 3. ENFOQUE + FOTO EQUIPO                               -->
+    <!-- ==================================================== -->
+    <section class="empresa-enfoque py-5">
       <div class="container">
         <div class="row g-4 align-items-center">
-          <div class="col-md-4 text-center photo">
-            <img src="public/img/viera-stenning.jpg" alt="Viera Stenning" class="img-fluid">
+
+          <div class="col-lg-6 text-body-lg">
+            <h2 class="empresa-section-title mb-3">
+              Nuestro enfoque:<br>Bienestar que se integra y transforma
+            </h2>
+            <p>
+              En Holística trabajamos con empresas que quieren ir más allá de los beneficios aislados.
+            </p>
+            <p>
+              Acompañamos desde el cuerpo, la emoción y la conciencia relacional, para que el bienestar deje
+              de ser un discurso y se convierta en cultura viva.
+            </p>
+            <p>
+              Diseñamos experiencias que dejan huella porque se trabajan desde lo humano y lo organizacional al mismo
+              tiempo.
+            </p>
           </div>
-          <div class="col-md-8">
-            <small>Fundadora</small>
-            <h4>Viera Stenning</h4>
-            <p>
-              Psicóloga clínica y psicoterapeuta. Trabajo con mente, cuerpo y alma,
-              pero sobre todo con la verdad. Me interesa acompañar procesos donde haya
-              espacio real para el descanso, la honestidad y la transformación.
-            </p>
-            <p>
-              Acompaño procesos individuales y grupales, con enfoque integrativo y corporal.
-              Me mueve especialmente trabajar con mujeres, maternidad, duelos y cambios de ciclo.
-            </p>
+
+          <div class="col-lg-6">
+            <div class="empresa-photo-wrapper">
+              <img src="public/img/empresa-equipo-1.png" alt="Personas participando en sesión de bienestar"
+                class="img-fluid rounded-4">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================== -->
+    <!-- 4. EXPERIENCIAS AL AIRE LIBRE                          -->
+    <!-- ==================================================== -->
+    <section class="empresa-experiencias py-5">
+      <div class="container">
+
+        <!-- Bloque aire libre -->
+        <div class="row g-4 align-items-center mb-5">
+          <div class="col-lg-6">
+            <div class="empresa-photo-large">
+              <img src="public/img/empresa-aire-libre.png" alt="Experiencias al aire libre" class="img-fluid rounded-4">
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <article class="empresa-card bg-white rounded-4 shadow-sm p-4">
+              <h3 class="empresa-card-title mb-3">Experiencias al aire libre</h3>
+
+              <p class="empresa-card-tag">Trekking consciente</p>
+              <p class="small mb-2">
+                Espacios guiados al aire libre con técnicas de mindfulness y reflexión, diseñados para integrar
+                conexión personal y de equipo.
+              </p>
+
+              <p class="empresa-card-tag">Viajes para líderes</p>
+              <p class="small mb-2">
+                Programas inmersivos donde líderes y equipos pueden reforzar habilidades de liderazgo, resiliencia
+                y toma de decisiones.
+              </p>
+
+              <p class="empresa-card-tag">Full day</p>
+              <p class="small mb-3">
+                Diseñamos experiencias de un día completo para que el equipo pueda reconectar, respirar y abrir
+                nuevas formas de vincularse.
+              </p>
+
+              <a href="#" class="btn btn-outline-dark btn-sm mt-2">Agenda una cita</a>
+            </article>
+          </div>
+        </div>
+
+        <!-- Bloque en oficina -->
+        <div class="row g-4 align-items-center empresa-oficina-row">
+          <div class="col-lg-6 order-lg-2">
+            <div class="empresa-photo-large">
+              <img src="public/img/empresa-oficina.png" alt="Experiencias en oficina" class="img-fluid rounded-4">
+            </div>
+          </div>
+
+          <div class="col-lg-5 order-lg-1">
+            <article class="empresa-card bg-white rounded-4 shadow-sm p-4">
+              <h3 class="empresa-card-title mb-3">Experiencias en oficina</h3>
+
+              <p class="empresa-card-tag">Acompañamiento emocional</p>
+              <p class="small mb-2">
+                Espacios individuales o grupales confidenciales para acompañar momentos de estrés, cambios o crisis
+                dentro del equipo.
+              </p>
+
+              <p class="empresa-card-tag">Wellbeing organizacional</p>
+              <p class="small mb-2">
+                Sesiones y talleres diseñados junto al área de Personas para alinear bienestar con cultura,
+                liderazgo y estrategia.
+              </p>
+
+              <p class="empresa-card-tag">Talleres y capacitaciones</p>
+              <p class="small mb-3">
+                Conversatorios, espacios vivenciales y formaciones en temas como gestión emocional, límites sanos,
+                comunicación y liderazgo consciente.
+              </p>
+
+              <a href="#" class="btn btn-outline-dark btn-sm mt-2">Agenda una cita</a>
+            </article>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================================================== -->
+    <!-- 5. LOGOS EMPRESAS                                      -->
+    <!-- ==================================================== -->
+    <section class="empresa-logos py-5">
+      <div class="container text-center text-body-lg">
+        <p class="mb-4 empresa-logos-title">Empresas que confían en nosotros</p>
+
+        <div class="row justify-content-center g-4 align-items-center">
+          <div class="col-6 col-md-3 col-lg-2">
+            <img src="public/img/logo-plumas.png" alt="Plumas" class="img-fluid empresa-logo-img">
+          </div>
+          <div class="col-6 col-md-3 col-lg-2">
+            <img src="public/img/logo-mckinsey.png" alt="McKinsey &amp; Company" class="img-fluid empresa-logo-img">
+          </div>
+          <div class="col-6 col-md-3 col-lg-2">
+            <img src="public/img/logo-libula.png" alt="Libula" class="img-fluid empresa-logo-img">
+          </div>
+          <div class="col-6 col-md-3 col-lg-2">
+            <img src="public/img/logo-uib.png" alt="UIB" class="img-fluid empresa-logo-img">
           </div>
         </div>
       </div>
     </section>
 
-    <!-- GRID DE EQUIPO -->
-    <section class="section-team-grid">
+    <!-- ==================================================== -->
+    <!-- 6. CTA + FAQ (reutiliza patrón de psico-faq)           -->
+    <!-- ==================================================== -->
+    <section class="empresa-faq psico-faq py-5">
       <div class="container">
-        <h3 class="text-center mb-4 team-grid-title">Nuestro Equipo</h3>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <article class="team-card h-100">
-              <img src="public/img/equipo-1.jpg" alt="Integrante del equipo 1">
-              <h6>Adriana Paz Ruiz</h6>
-              <small>Psicóloga clínica y psicoterapeuta</small>
-              <p>
-                Acompaño procesos de transformación desde una mirada sensible y
-                práctica, integrando herramientas corporales y emocionales.
+        <div class="row g-5 py-5 justify-content-center">
+
+          <!-- CTA IZQUIERDA -->
+          <div class="col-lg-4">
+            <div class="faq-left p-4 text-body-lg">
+              <h2 class="faq-left-title">Hablemos del bienestar de tu equipo</h2>
+              <p class="faq-left-text">
+                Juntos exploramos la realidad de tu organización y diseñamos un programa que cuide tanto la vida
+                de las personas como los objetivos del negocio.
               </p>
-            </article>
+              <a href="#" class="btn btn-outline-dark mt-3">Agenda una reunión</a>
+            </div>
           </div>
 
-          <div class="col-md-4">
-            <article class="team-card h-100">
-              <img src="public/img/equipo-2.jpg" alt="Integrante del equipo 2">
-              <h6>Seiji Arakaki Hirano</h6>
-              <small>Psicólogo clínico y terapeuta</small>
-              <p>
-                Integro la psicoterapia con un espacio seguro para explorar
-                identidad, vínculos y propósito, desde una mirada cercana
-                y respetuosa.
-              </p>
-            </article>
+          <!-- FAQ DERECHA -->
+          <div class="col-lg-5">
+            <h2 class="faq-title mb-4">Resuelve tus dudas</h2>
+
+            <div class="accordion" id="accordionEmpresaFaq">
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#empFaq1">
+                    ¿Cuántos colaboradores pueden participar en el programa?
+                  </button>
+                </h3>
+                <div id="empFaq1" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    Adaptamos el diseño al tamaño de tu empresa. Podemos trabajar con grupos pequeños, equipos
+                    específicos o con toda la organización por fases.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#empFaq2">
+                    ¿Es necesario tener un espacio especial en la oficina?
+                  </button>
+                </h3>
+                <div id="empFaq2" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    No es imprescindible. Podemos adaptarnos a las instalaciones que tengan o combinar sesiones
+                    presenciales con espacios al aire libre o virtuales.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#empFaq3">
+                    ¿Se puede empezar con un piloto pequeño?
+                  </button>
+                </h3>
+                <div id="empFaq3" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    Sí. Muchas empresas comienzan con un grupo específico (por ejemplo, líderes o un área crítica)
+                    y luego escalamos según los aprendizajes.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#empFaq4">
+                    ¿Cómo medimos el impacto del programa?
+                  </button>
+                </h3>
+                <div id="empFaq4" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    Trabajamos con encuestas de bienestar, indicadores cualitativos y espacios de feedback con
+                    RRHH y liderazgo para evaluar cambios reales en clima y cultura.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
           </div>
 
-          <div class="col-md-4">
-            <article class="team-card h-100">
-              <img src="public/img/equipo-3.jpg" alt="Integrante del equipo 3">
-              <h6>Natalia Succar</h6>
-              <small>Psicóloga clínica y psicoterapeuta</small>
-              <p>
-                Creo profundamente en el acompañamiento cálido y honesto. Me
-                interesa trabajar con ansiedad, crisis y procesos de cambio vital.
-              </p>
-            </article>
-          </div>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- FOOTER (puedes reutilizar el mismo de index) -->
-  <!-- FOOTER -->
+  <!-- ---------------- FOOTER REUTILIZADO ---------------- -->
   <footer class="footer">
     <div class="container">
       <div class="row gy-4 align-items-start">
-  
-        <!-- Info de contacto / marca -->
+
+        <!-- Info de contacto -->
         <section class="col-md-6 footer-brand" aria-label="Información de contacto de Holística">
-  
           <div class="footer-logo">
-            <img src="public/img/holistica.png" alt="Holística" />
+            <img src="public/img/holistica.png" alt="Holística">
           </div>
-  
           <p class="footer-text">
             La salud mental no se cuida solo con la mente. <br> Necesitamos vernos desde mente, cuerpo y alma.
           </p>
-  
           <ul class="footer-list">
             <li>
-              <a href="" class="footer-link">
+              <a href="#" class="footer-link">
                 <i class="img__pointer"></i>
                 La Aurora, Miraflores, Lima
               </a>
@@ -257,10 +352,9 @@
               </a>
             </li>
           </ul>
-  
         </section>
-  
-        <!-- Navegación: Servicios -->
+
+        <!-- Columnas footer reutilizadas -->
         <nav class="col-md-2 footer-column" aria-labelledby="footer-services-title">
           <p id="footer-services-title" class="footer-title">Servicios</p>
           <ul class="footer-list">
@@ -269,8 +363,7 @@
             <li><a href="#">Experiencias</a></li>
           </ul>
         </nav>
-  
-        <!-- Navegación: Interés -->
+
         <nav class="col-md-2 footer-column" aria-labelledby="footer-interest-title">
           <p id="footer-interest-title" class="footer-title">Interés</p>
           <ul class="footer-list">
@@ -279,44 +372,22 @@
             <li><a href="#">Blog</a></li>
           </ul>
         </nav>
-  
-        <!-- Navegación: Redes / comunidad -->
+
         <nav class="col-md-2 footer-column" aria-labelledby="footer-social-title">
           <p id="footer-social-title" class="footer-title">Síguenos</p>
-          <!-- <ul class="list-unstyled small"> -->
           <ul class="footer-list">
-            <li>
-              <a href="#" class="footer-link">
-                <i class="img__fb"></i>
-                Holistica.Centrodebienestar
-              </a>
-            </li>
-            <li>
-              <a href="#" class="footer-link">
-                <i class="img__ig"></i>
-                holistica_peru
-              </a>
-            </li>
-            <li>
-              <a href="#" class="footer-link">
-                <i class="img__in"></i>
-                Holística
-              </a>
-            </li>
-            <li>
-              <a href="#" class="footer-link">
-                <i class="img__sp"></i>
-                Holistica.Peru
-              </a>
-            </li>
+            <li><a href="#" class="footer-link"><i class="img__fb"></i>Holistica.Centrodebienestar</a></li>
+            <li><a href="#" class="footer-link"><i class="img__ig"></i>holistica_peru</a></li>
+            <li><a href="#" class="footer-link"><i class="img__in"></i>Holística</a></li>
+            <li><a href="#" class="footer-link"><i class="img__sp"></i>Holistica.Peru</a></li>
           </ul>
         </nav>
-  
+
       </div>
-  
     </div>
   </footer>
 
+  <!-- JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

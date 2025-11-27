@@ -38,23 +38,6 @@
     padding-left: 1.2rem
     color: $primary
     font-weight: 500
-  .btn.btn-outline-dark
-    display: block
-    margin-left: auto
-    margin-right: auto
-    width: fit-content
-    border-radius: 999px
-    padding: .55rem 1.8rem
-    font-size: .8rem
-    text-transform: uppercase
-    letter-spacing: .12em
-    border-color: $primary
-    color: $primary
-    background-color: transparent
-
-    &:hover
-      background-color: $primary
-      color: $text-light
 
 
 
@@ -197,29 +180,49 @@
 
 // ---------- BLOQUE 5 – FAQ + TARJETA IZQUIERDA ----------
 .psico-faq
-  background-color: $bg-base
+  background-color: $hol-rose-light
+  .container
+    position: relative
+    z-index: 2
+    &::before
+      content: ""
+      position: absolute
+      top: 10px
+      left: -70px
+      width: 240px
+      height: 240px
+      background: url("../img/flower.png") no-repeat
+      background-size: contain
+    &::after
+      content: ""
+      position: absolute
+      bottom: -40px
+      right: -80px
+      width: 240px
+      height: 240px
+      rotate: 180deg
+      background: url("../img/flower.png") no-repeat
+      background-size: contain
 
   .faq-left
-    background-color: $text-light
-    border-radius: 2.5rem
     padding: 2.5rem 2.25rem
-    box-shadow: $shadow-soft
+    max-width: 300px
 
   .faq-left-title
-    font-family: 'PlayfairDisplay'
-    font-size: 1.5rem
+    // font-family: 'PlayfairDisplay'
+    // font-size: 1.5rem
     color: $primary
     margin-bottom: 1rem
 
   .faq-left-text
-    font-family: 'Bilo', sans-serif
-    font-size: $font-md
-    line-height: 1.7
+    // // font-family: 'Bilo', sans-serif
+    // // font-size: $font-md
+    // line-height: 1.7
     color: $text-main
 
   .faq-title
-    font-family: 'PlayfairDisplay'
-    font-size: 1.4rem
+    // font-family: 'PlayfairDisplay'
+    // font-size: 1.4rem
     color: $primary
     font-weight: 300
 
@@ -230,12 +233,14 @@
     background-color: transparent
 
   .accordion-button
+    font-family: "Bilo", sans-serif
+    font-size: $font-lg
+    line-height: 1.6
+    font-weight: 400
     background-color: transparent
-    font-family: 'Bilo', sans-serif
-    font-size: $font-md
     color: $primary
     padding-left: 0
-    padding-right: 0
+    padding-right: 30px
     box-shadow: none
 
     &:focus
@@ -246,7 +251,8 @@
 
   .accordion-body
     font-family: 'Bilo', sans-serif
-    font-size: $font-md
+    font-size: $font-lg
+    font-weight: 100
     color: $text-main
     padding-left: 0
     padding-right: 0

@@ -1,0 +1,116 @@
+.empresa-hero
+  color: $primary
+  position: relative
+  overflow: hidden
+  padding-top: 4rem
+  padding-bottom: 4rem
+  .container
+    position: relative
+    z-index: 2
+    &::before
+      content: ""
+      position: absolute
+      top: -80px
+      left: -70px
+      width: 240px
+      height: 240px
+      background: url("../img/flower.png") no-repeat
+      background-size: contain
+    &::after
+      content: ""
+      position: absolute
+      bottom: -70px
+      right: -80px
+      width: 240px
+      height: 240px
+      rotate: 180deg
+      background: url("../img/flower.png") no-repeat
+      background-size: contain
+
+
+
+  .empresa-hero-title
+    font-family: 'PlayfairDisplay'
+    font-size: 2.2rem
+    font-weight: 300
+
+  .empresa-hero-subtitle
+    max-width: 540px
+    margin: 1rem auto 0 auto
+
+// BANDA TEST (similar a psico-block2)
+.empresa-test
+  background-color: $bg-base
+  background-image: url('../img/bg-descarga.png')
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+
+  .empresa-test-box
+    max-width: 680px
+    padding: 2.5rem 2rem
+    color: $text-light
+
+// ENFOQUE
+.empresa-enfoque
+  background-color: #f5f3ee
+
+  .empresa-section-title
+    font-family: 'PlayfairDisplay'
+    font-size: 1.7rem
+    font-weight: 300
+    color: $primary
+
+  p
+    color: $primary
+
+  .empresa-photo-wrapper
+    border-radius: 2rem
+    overflow: hidden
+    box-shadow: $shadow-soft
+
+// EXPERIENCIAS
+.empresa-experiencias
+  background-color: $bg-base
+
+  .empresa-photo-large img
+    border-radius: 2.5rem
+    box-shadow: $shadow-soft
+
+  .empresa-card
+    border-radius: 2rem
+    border: 1px solid rgba(0,0,0,.08)
+
+  .empresa-card-title
+    font-family: 'PlayfairDisplay'
+    font-size: 1.5rem
+    color: $primary
+
+  .empresa-card-tag
+    font-weight: 600
+    font-size: .85rem
+    text-transform: uppercase
+    letter-spacing: .08em
+    margin-bottom: .25rem
+    color: $secondary
+
+// LOGOS
+.empresa-logos
+  background-color: $text-light
+
+  .empresa-logos-title
+    font-family: 'PlayfairDisplay'
+    font-size: 1.2rem
+    color: $primary
+
+  .empresa-logo-img
+    max-height: 60px
+    object-fit: contain
+    filter: grayscale(100%)
+    opacity: .9
+
+// FAQ EMPRESAS reutiliza psico-faq para fondo / adornos
+.empresa-faq
+  // solo tweaks si necesitas
+  .faq-left
+    max-width: 340px

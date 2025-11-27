@@ -104,6 +104,25 @@ h3, .h3 {
   font-weight: 300;
 }
 
+.btn.btn-outline-dark {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  border-radius: 999px;
+  padding: 0.55rem 1.8rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  border-color: #214a4c;
+  color: #214a4c;
+  background-color: transparent;
+}
+.btn.btn-outline-dark:hover {
+  background-color: #214a4c;
+  color: #ffffff;
+}
+
 /*!
  * Bootstrap  v5.3.8 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
@@ -13028,24 +13047,6 @@ textarea.form-control-lg {
   color: #214a4c;
   font-weight: 500;
 }
-.psico-hero .btn.btn-outline-dark {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: fit-content;
-  border-radius: 999px;
-  padding: 0.55rem 1.8rem;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  border-color: #214a4c;
-  color: #214a4c;
-  background-color: transparent;
-}
-.psico-hero .btn.btn-outline-dark:hover {
-  background-color: #214a4c;
-  color: #ffffff;
-}
 
 .psico-block2 {
   background-color: #f3eede;
@@ -13179,27 +13180,43 @@ textarea.form-control-lg {
 .psico-faq {
   background-color: #f3eede;
 }
+.psico-faq .container {
+  position: relative;
+  z-index: 2;
+}
+.psico-faq .container::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -70px;
+  width: 240px;
+  height: 240px;
+  background: url("../img/flower.png") no-repeat;
+  background-size: contain;
+}
+.psico-faq .container::after {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  right: -80px;
+  width: 240px;
+  height: 240px;
+  rotate: 180deg;
+  background: url("../img/flower.png") no-repeat;
+  background-size: contain;
+}
 .psico-faq .faq-left {
-  background-color: #ffffff;
-  border-radius: 2.5rem;
   padding: 2.5rem 2.25rem;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  max-width: 300px;
 }
 .psico-faq .faq-left-title {
-  font-family: "PlayfairDisplay";
-  font-size: 1.5rem;
   color: #214a4c;
   margin-bottom: 1rem;
 }
 .psico-faq .faq-left-text {
-  font-family: "Bilo", sans-serif;
-  font-size: 1rem;
-  line-height: 1.7;
   color: #2d2d2d;
 }
 .psico-faq .faq-title {
-  font-family: "PlayfairDisplay";
-  font-size: 1.4rem;
   color: #214a4c;
   font-weight: 300;
 }
@@ -13209,12 +13226,14 @@ textarea.form-control-lg {
   background-color: transparent;
 }
 .psico-faq .accordion-button {
-  background-color: transparent;
   font-family: "Bilo", sans-serif;
-  font-size: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  font-weight: 400;
+  background-color: transparent;
   color: #214a4c;
   padding-left: 0;
-  padding-right: 0;
+  padding-right: 30px;
   box-shadow: none;
 }
 .psico-faq .accordion-button:focus {
@@ -13225,7 +13244,8 @@ textarea.form-control-lg {
 }
 .psico-faq .accordion-body {
   font-family: "Bilo", sans-serif;
-  font-size: 1rem;
+  font-size: 1.125rem;
+  font-weight: 100;
   color: #2d2d2d;
   padding-left: 0;
   padding-right: 0;
@@ -13308,4 +13328,120 @@ textarea.form-control-lg {
   .psico-block4 .block4-flower-right {
     width: 200px;
   }
+}
+.empresa-hero {
+  color: #214a4c;
+  position: relative;
+  overflow: hidden;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.empresa-hero .container {
+  position: relative;
+  z-index: 2;
+}
+.empresa-hero .container::before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  left: -70px;
+  width: 240px;
+  height: 240px;
+  background: url("../img/flower.png") no-repeat;
+  background-size: contain;
+}
+.empresa-hero .container::after {
+  content: "";
+  position: absolute;
+  bottom: -70px;
+  right: -80px;
+  width: 240px;
+  height: 240px;
+  rotate: 180deg;
+  background: url("../img/flower.png") no-repeat;
+  background-size: contain;
+}
+.empresa-hero .empresa-hero-title {
+  font-family: "PlayfairDisplay";
+  font-size: 2.2rem;
+  font-weight: 300;
+}
+.empresa-hero .empresa-hero-subtitle {
+  max-width: 540px;
+  margin: 1rem auto 0 auto;
+}
+
+.empresa-test {
+  background-color: #f3eede;
+  background-image: url("../img/bg-descarga.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.empresa-test .empresa-test-box {
+  max-width: 680px;
+  padding: 2.5rem 2rem;
+  color: #ffffff;
+}
+
+.empresa-enfoque {
+  background-color: #f5f3ee;
+}
+.empresa-enfoque .empresa-section-title {
+  font-family: "PlayfairDisplay";
+  font-size: 1.7rem;
+  font-weight: 300;
+  color: #214a4c;
+}
+.empresa-enfoque p {
+  color: #214a4c;
+}
+.empresa-enfoque .empresa-photo-wrapper {
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.empresa-experiencias {
+  background-color: #f3eede;
+}
+.empresa-experiencias .empresa-photo-large img {
+  border-radius: 2.5rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+.empresa-experiencias .empresa-card {
+  border-radius: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+.empresa-experiencias .empresa-card-title {
+  font-family: "PlayfairDisplay";
+  font-size: 1.5rem;
+  color: #214a4c;
+}
+.empresa-experiencias .empresa-card-tag {
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.25rem;
+  color: #738578;
+}
+
+.empresa-logos {
+  background-color: #ffffff;
+}
+.empresa-logos .empresa-logos-title {
+  font-family: "PlayfairDisplay";
+  font-size: 1.2rem;
+  color: #214a4c;
+}
+.empresa-logos .empresa-logo-img {
+  max-height: 60px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.9;
+}
+
+.empresa-faq .faq-left {
+  max-width: 340px;
 }
