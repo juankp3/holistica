@@ -54,6 +54,7 @@
 // ENFOQUE
 .empresa-enfoque
   background-color: #f5f3ee
+  
 
   .empresa-section-title
     font-family: 'PlayfairDisplay'
@@ -72,45 +73,62 @@
 // EXPERIENCIAS
 .empresa-experiencias
   background-color: $bg-base
+  background-image: url('../img/bg-experiencia.png')
+  background-repeat: no-repeat
+  background-size: cover
 
   .empresa-photo-large img
     border-radius: 2.5rem
     box-shadow: $shadow-soft
 
-  .empresa-card
-    border-radius: 2rem
-    border: 1px solid rgba(0,0,0,.08)
-
-  .empresa-card-title
-    font-family: 'PlayfairDisplay'
-    font-size: 1.5rem
-    color: $primary
-
-  .empresa-card-tag
-    font-weight: 600
-    font-size: .85rem
-    text-transform: uppercase
-    letter-spacing: .08em
-    margin-bottom: .25rem
-    color: $secondary
 
 // LOGOS
 .empresa-logos
-  background-color: $text-light
+  background-color: $hol-rose-light
+  // background-color: $bg-base
+  background-image: url('../img/ventana-empresa.png')
+  background-repeat: no-repeat
+  background-position: center top
 
   .empresa-logos-title
     font-family: 'PlayfairDisplay'
-    font-size: 1.2rem
+    font-size: 2rem
     color: $primary
+    margin-bottom: 3rem !important
+  .empresa-card
+    margin-top: 400px
 
   .empresa-logo-img
-    max-height: 60px
-    object-fit: contain
-    filter: grayscale(100%)
-    opacity: .9
+    // max-height: 60px
+    // object-fit: contain
+    // filter: grayscale(100%)
+    // opacity: .9
+
+.empresa-card
+  border-radius: 2rem
+  border: 1px solid rgba(0,0,0,.08)
+  max-width: 600px
+  margin: auto
+  padding: 2.5rem 5rem !important
+  // margin-top: 400px
+
+.empresa-card-title
+  font-family: 'PlayfairDisplay'
+  font-size: 1.5rem
+  color: $primary
+
+.empresa-card-tag
+  // font-weight: 600
+  // font-size: .85rem
+  margin-top: 1.5rem
+  text-transform: uppercase
+  letter-spacing: .08em
+  margin-bottom: 0
+  color: $primary
 
 // FAQ EMPRESAS reutiliza psico-faq para fondo / adornos
 .empresa-faq
+  background: white
   // solo tweaks si necesitas
   .faq-left
     max-width: 340px
